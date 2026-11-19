@@ -3,1074 +3,1041 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Bestie! 🎂✨ ပျော်ရွှင်စရာ မွေးနေ့လေး ဖြစ်ပါစေ</title>
+    <title>Congratulations, Graduate! 🎓✨ ဘွဲ့နှင်းသဘင် အမှတ်တရ</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Padauk for Burmese, Pacifico & Quicksand for English -->
+    <!-- Google Fonts: Cinzel & Playfair Display for Royal Graduation vibe, Padauk for Burmese -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Padauk:wght@400;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Padauk:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Custom Fonts & Pastel Pink Gradient Theme */
+        /* Navy Blue, Royal Gold & Cream Luxury Palette */
+        :root {
+            --navy-deep: #091326;
+            --navy-mid: #102347;
+            --navy-card: rgba(18, 38, 76, 0.72);
+            --gold-bright: #f6d365;
+            --gold-rich: #d4af37;
+            --gold-deep: #aa771c;
+            --cream-soft: #fdfbf7;
+        }
+
         body {
-            font-family: 'Padauk', 'Quicksand', sans-serif;
-            background: linear-gradient(135deg, #fff0f5 0%, #ffdde1 25%, #f8bbd0 55%, #ffc3a0 85%, #ee9ca7 100%);
-            background-size: 300% 300%;
-            animation: gradientBG 15s ease infinite;
-            color: #6b2146;
-            overflow-x: hidden;
+            font-family: 'Padauk', 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at top center, #162f5e 0%, #0b1833 55%, #060d1c 100%);
+            color: var(--cream-soft);
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        .font-script {
-            font-family: 'Pacifico', cursive;
+        .font-royal {
+            font-family: 'Cinzel', 'Playfair Display', serif;
         }
 
-        .font-en {
-            font-family: 'Quicksand', sans-serif;
+        .font-serif-en {
+            font-family: 'Playfair Display', serif;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Glassmorphism Cards */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.58);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1.5px solid rgba(255, 255, 255, 0.85);
-            box-shadow: 0 10px 35px rgba(238, 156, 167, 0.28), inset 0 0 15px rgba(255, 255, 255, 0.6);
-        }
-
-        .glass-card-strong {
-            background: rgba(255, 255, 255, 0.78);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            border: 2px solid rgba(255, 255, 255, 0.95);
-            box-shadow: 0 15px 40px rgba(219, 112, 147, 0.3);
-        }
-
-        /* Glitter & Sparkle Shimmer Text */
-        .glitter-text {
-            background: linear-gradient(90deg, #d81b60, #ff6090, #f59e0b, #ec4899, #d81b60);
+        /* Metallic Gold Gradient Text */
+        .gold-gradient-text {
+            background: linear-gradient(120deg, #bf953f 0%, #fcf6ba 28%, #d4af37 52%, #fbf5b7 78%, #aa771c 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: shineText 4s linear infinite;
+            animation: goldShimmer 5s linear infinite;
         }
 
-        @keyframes shineText {
+        @keyframes goldShimmer {
             to { background-position: 200% center; }
         }
 
-        /* Floating Animations */
-        @keyframes floatSlow {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(2deg); }
-        }
-        .animate-float {
-            animation: floatSlow 3.5s ease-in-out infinite;
-        }
-
-        /* Candle Flame Animation */
-        @keyframes flicker {
-            0%, 100% { transform: scale(1) rotate(-2deg); opacity: 1; }
-            25% { transform: scale(1.08, 0.95) rotate(2deg); opacity: 0.92; }
-            50% { transform: scale(0.95, 1.08) rotate(-1deg); opacity: 1; }
-            75% { transform: scale(1.04, 0.98) rotate(3deg); opacity: 0.95; }
+        /* Royal Glass Cards */
+        .royal-card {
+            background: var(--navy-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), inset 0 0 20px rgba(212, 175, 55, 0.08);
         }
 
-        .candle-flame {
-            animation: flicker 0.7s infinite alternate;
-            transform-origin: bottom center;
-            filter: drop-shadow(0 0 8px #ffb703) drop-shadow(0 0 14px #fb8500);
+        .royal-card-hover {
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Smoke Puff Animation when blown out */
-        @keyframes smokeRise {
-            0% { transform: translateY(0) scale(0.5); opacity: 0.85; }
-            100% { transform: translateY(-35px) scale(1.8); opacity: 0; }
-        }
-        .smoke-puff {
-            animation: smokeRise 1.4s ease-out forwards;
+        .royal-card-hover:hover {
+            transform: translateY(-5px);
+            border-color: rgba(252, 246, 186, 0.75);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.55), 0 0 20px rgba(212, 175, 55, 0.22);
         }
 
-        /* Music Equalizer Bars */
-        @keyframes eqBar {
-            0%, 100% { height: 6px; }
-            50% { height: 18px; }
-        }
-        .eq-playing .bar1 { animation: eqBar 0.6s ease-in-out infinite; }
-        .eq-playing .bar2 { animation: eqBar 0.45s ease-in-out infinite 0.15s; }
-        .eq-playing .bar3 { animation: eqBar 0.7s ease-in-out infinite 0.3s; }
-
-        /* Gift Box Shake */
-        @keyframes giftWiggle {
-            0%, 100% { transform: rotate(0deg) scale(1); }
-            20% { transform: rotate(-6deg) scale(1.05); }
-            40% { transform: rotate(6deg) scale(1.05); }
-            60% { transform: rotate(-4deg) scale(1.03); }
-            80% { transform: rotate(4deg) scale(1.03); }
-        }
-        .gift-hover:hover {
-            animation: giftWiggle 0.8s ease-in-out infinite;
+        /* Gold Button */
+        .btn-royal-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #c59b27 100%);
+            color: #091326;
+            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+            transition: all 0.25s ease;
         }
 
-        /* Card Pop-in */
-        @keyframes popIn {
-            0% { opacity: 0; transform: scale(0.85) translateY(15px); }
+        .btn-royal-gold:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 10px 26px rgba(212, 175, 55, 0.55);
+        }
+
+        .btn-royal-gold:active {
+            transform: scale(0.97);
+        }
+
+        /* Floating Cap Animation */
+        @keyframes floatCap {
+            0%, 100% { transform: translateY(0px) rotate(-3deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+        }
+        .animate-cap-float {
+            animation: floatCap 4s ease-in-out infinite;
+        }
+
+        /* Cap Toss Spin Animation */
+        @keyframes tossSpin {
+            0% { transform: translateY(0) rotate(0deg) scale(1); }
+            45% { transform: translateY(-165px) rotate(360deg) scale(1.22); }
+            75% { transform: translateY(-30px) rotate(680deg) scale(1.05); }
+            100% { transform: translateY(0) rotate(720deg) scale(1); }
+        }
+        .animate-toss {
+            animation: tossSpin 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Music Equalizer */
+        @keyframes eqDance {
+            0%, 100% { height: 5px; }
+            50% { height: 16px; }
+        }
+        .eq-active .b1 { animation: eqDance 0.55s ease-in-out infinite; }
+        .eq-active .b2 { animation: eqDance 0.4s ease-in-out infinite 0.15s; }
+        .eq-active .b3 { animation: eqDance 0.65s ease-in-out infinite 0.25s; }
+
+        /* Pop-in animation */
+        @keyframes popReveal {
+            0% { opacity: 0; transform: scale(0.9) translateY(12px); }
             100% { opacity: 1; transform: scale(1) translateY(0); }
         }
-        .animate-pop-in {
-            animation: popIn 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        .animate-pop {
+            animation: popReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Step Slide Transition */
+        @keyframes stepSlideIn {
+            0% { opacity: 0; transform: translateX(28px) scale(0.98); }
+            100% { opacity: 1; transform: translateX(0) scale(1); }
+        }
+        .step-enter {
+            animation: stepSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
 
         /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #fff0f5;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #f48fb1;
-            border-radius: 9999px;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #091326; }
+        ::-webkit-scrollbar-thumb { background: #aa771c; border-radius: 9999px; }
     </style>
 </head>
-<body class="relative selection:bg-pink-300 selection:text-pink-900">
+<body class="relative selection:bg-amber-300 selection:text-slate-900 flex flex-col justify-between min-h-screen">
 
-    <!-- Background Glitter & Confetti Canvas -->
-    <canvas id="glitterCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
-    <canvas id="confettiCanvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
+    <!-- Background Gold Sparkles & Confetti Canvas -->
+    <canvas id="goldSparkleCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+    <canvas id="celebrationConfettiCanvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
 
-    <!-- Welcome Surprise Overlay -->
-    <div id="welcomeOverlay" class="fixed inset-0 z-40 flex items-center justify-center p-4 bg-pink-100/80 backdrop-blur-xl transition-opacity duration-700">
-        <div class="glass-card-strong max-w-md w-full rounded-3xl p-8 text-center relative overflow-hidden animate-pop-in">
-            <!-- Decorative corner sparkles -->
-            <div class="absolute top-3 left-4 text-2xl animate-pulse">✨</div>
-            <div class="absolute top-4 right-5 text-2xl animate-bounce">🎀</div>
-            <div class="absolute bottom-3 left-5 text-xl animate-bounce">🌸</div>
-            <div class="absolute bottom-3 right-4 text-2xl animate-pulse">💖</div>
+    <!-- Sticky Header, Step Progress Bar & Graduation March Music Toggle -->
+    <header class="sticky top-0 z-30 px-4 pt-3 pb-2">
+        <div class="max-w-4xl mx-auto royal-card rounded-3xl px-4 sm:px-6 py-3 space-y-2.5">
+            <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2.5">
+                    <span class="text-2xl">🎓</span>
+                    <div>
+                        <span class="font-royal text-sm sm:text-lg font-bold gold-gradient-text tracking-wider block leading-none">
+                            CLASS OF 2026
+                        </span>
+                        <span class="text-[11px] sm:text-xs text-amber-200/85">ဘွဲ့နှင်းသဘင် အထိမ်းအမှတ်</span>
+                    </div>
+                </div>
 
-            <div class="mb-4 inline-block p-5 rounded-full bg-gradient-to-tr from-pink-200 to-rose-100 shadow-inner animate-float">
-                <span class="text-6xl block">🎁</span>
-            </div>
-
-            <p class="font-script text-3xl sm:text-4xl glitter-text mb-2">Happy Birthday Bestie!</p>
-            <h1 class="text-xl sm:text-2xl font-bold text-pink-800 mb-3 leading-relaxed">
-                ပျော်ရွှင်စရာ မွေးနေ့လေး ဖြစ်ပါစေ သူငယ်ချင်းရေ! 🎂✨
-            </h1>
-            <p class="text-sm sm:text-base text-pink-700/90 mb-6 leading-relaxed">
-                ဒီနေ့လေးက မင်းအတွက် အလှပဆုံးနဲ့ အပျော်ရွှင်ရဆုံး နေ့ရက်လေးဖြစ်ဖို့ အထူးလက်ဆောင်လေး ပြင်ဆင်ထားတယ်နော် 💕
-            </p>
-
-            <button id="openSurpriseBtn" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-pink-500 via-rose-400 to-pink-500 hover:from-pink-600 hover:to-rose-500 text-white font-bold text-lg shadow-lg shadow-pink-300/60 transform transition hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer">
-                <span>မွေးနေ့လက်ဆောင် ဖွင့်မယ်</span>
-                <span class="text-xl">🎉</span>
-            </button>
-            <p class="text-xs text-pink-500 mt-3 font-en">✨ Tap to start Happy Birthday music & sparkles ✨</p>
-        </div>
-    </div>
-
-    <!-- Top Floating Header & Music Controller -->
-    <header class="sticky top-0 z-30 px-4 py-3">
-        <div class="max-w-4xl mx-auto glass-card rounded-full px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2">
-            <div class="flex items-center gap-2">
-                <span class="text-2xl">👑</span>
-                <div>
-                    <span class="font-script text-lg sm:text-xl text-pink-600 block leading-none">Bestie's Day</span>
-                    <span class="text-[11px] sm:text-xs text-pink-700 font-bold">မွေးနေ့ဆုမွန်ကောင်း</span>
+                <div class="flex items-center gap-2">
+                    <!-- Step Counter Badge -->
+                    <span id="stepBadge" class="hidden sm:inline-block px-3 py-1 rounded-full bg-amber-400/15 border border-amber-300/40 text-amber-200 text-xs font-bold">
+                        Step 1 / 5
+                    </span>
+                    <!-- Music Box Button -->
+                    <button id="marchMusicBtn" class="btn-royal-gold px-3.5 sm:px-4 py-2 rounded-full text-xs sm:text-sm flex items-center gap-2 cursor-pointer">
+                        <div id="musicEq" class="flex items-end gap-0.5 h-4 w-3.5 justify-center">
+                            <span class="b1 w-1 bg-slate-900 rounded-full h-1.5"></span>
+                            <span class="b2 w-1 bg-slate-900 rounded-full h-3"></span>
+                            <span class="b3 w-1 bg-slate-900 rounded-full h-1.5"></span>
+                        </div>
+                        <span id="marchBtnLabel">Play March 🎶</span>
+                    </button>
                 </div>
             </div>
 
-            <!-- Music Box Toggle Button -->
-            <button id="musicToggleBtn" class="flex items-center gap-2.5 px-4 py-2 rounded-full bg-gradient-to-r from-pink-400 to-rose-400 text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transform transition active:scale-95 cursor-pointer">
-                <div id="eqBars" class="flex items-end gap-0.5 h-4 w-3.5 justify-center">
-                    <span class="bar1 w-1 bg-white rounded-full h-1.5"></span>
-                    <span class="bar2 w-1 bg-white rounded-full h-2.5"></span>
-                    <span class="bar3 w-1 bg-white rounded-full h-1.5"></span>
-                </div>
-                <span id="musicBtnText">Play Birthday Song 🎵</span>
-            </button>
+            <!-- Interactive Step Dots & Progress Bar -->
+            <div class="flex items-center gap-2 pt-1">
+                <button onclick="goToStep(1)" class="step-dot flex-1 h-2 rounded-full bg-amber-400 transition-all cursor-pointer" title="Step 1: Welcome"></button>
+                <button onclick="goToStep(2)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 2: Timeline"></button>
+                <button onclick="goToStep(3)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 3: Cap Toss"></button>
+                <button onclick="goToStep(4)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 4: Photo Frame"></button>
+                <button onclick="goToStep(5)" class="step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer" title="Step 5: Guestbook"></button>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="relative z-10 max-w-4xl mx-auto px-4 pb-20 pt-2 space-y-8">
+    <!-- Main Step-by-Step Container -->
+    <main class="relative z-10 max-w-4xl w-full mx-auto px-4 py-4 flex-1 flex flex-col justify-center">
 
-        <!-- Hero Banner -->
-        <section class="glass-card rounded-3xl p-6 sm:p-8 text-center relative overflow-hidden">
-            <div class="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-pink-100/90 border border-pink-300 text-pink-700 text-xs sm:text-sm font-bold mb-3">
-                <span>🌷</span>
-                <span>Special Celebration For My Favorite Person</span>
-                <span>🌷</span>
-            </div>
-            <h2 class="font-script text-4xl sm:text-5xl md:text-6xl glitter-text py-1">
-                Happy Birthday, Bestie!
-            </h2>
-            <p class="text-lg sm:text-2xl font-bold text-pink-800 mt-2">
-                မွေးနေ့မှသည် နောင်နှစ်ပေါင်းများစွာတိုင် ပျော်ရွှင်ပါစေ သူငယ်ချင်း 💖
-            </p>
-            <p class="text-sm sm:text-base text-pink-700/90 max-w-xl mx-auto mt-2 leading-relaxed">
-                အမြဲတမ်း အတူတူ ရယ်မောပျော်ရွှင်ခဲ့ရတဲ့ အမှတ်တရတွေအတွက် ကျေးဇူးတင်ပါတယ်။ ဒီနှစ်မွေးနေ့မှာ မင်းဖြစ်ချင်တဲ့ ဆန္ဒတွေအားလုံး ပြည့်ဝပါစေနော်! ✨
-            </p>
-        </section>
+        <!-- =========================================================
+             STEP 1: WELCOME & GRADUATION COVER
+             ========================================================= -->
+        <section id="wizard-step-1" class="wizard-step royal-card rounded-3xl p-6 sm:p-10 md:p-12 text-center relative overflow-hidden step-enter">
+            <!-- Corner Gold Accents -->
+            <div class="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-amber-400/50 rounded-tl-3xl pointer-events-none"></div>
+            <div class="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-amber-400/50 rounded-tr-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-amber-400/50 rounded-bl-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-amber-400/50 rounded-br-3xl pointer-events-none"></div>
 
-        <!-- Navigation Tabs -->
-        <nav class="flex flex-wrap justify-center gap-2 sm:gap-3" aria-label="Birthday Sections">
-            <button onclick="switchTab('cake')" id="tab-cake" class="tab-btn px-4 sm:px-6 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-md bg-pink-500 text-white scale-105 cursor-pointer flex items-center gap-2">
-                <span>🎂</span> <span>မွေးနေ့ကိတ် (Cake)</span>
-            </button>
-            <button onclick="switchTab('blessings')" id="tab-blessings" class="tab-btn px-4 sm:px-6 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all glass-card text-pink-800 hover:bg-white/80 cursor-pointer flex items-center gap-2">
-                <span>💌</span> <span>ဆုတောင်းလွှာ (Blessings)</span>
-            </button>
-            <button onclick="switchTab('games')" id="tab-games" class="tab-btn px-4 sm:px-6 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all glass-card text-pink-800 hover:bg-white/80 cursor-pointer flex items-center gap-2">
-                <span>🎮</span> <span>မွေးနေ့ဂိမ်းများ (Games)</span>
-            </button>
-        </nav>
-
-        <!-- SECTION 1: INTERACTIVE BIRTHDAY CAKE -->
-        <section id="section-cake" class="tab-section glass-card rounded-3xl p-6 sm:p-10 text-center animate-pop-in">
-            <h3 class="text-xl sm:text-2xl font-bold text-pink-800 mb-1">
-                ဆုတောင်းပြီး ဖယောင်းတိုင် မီးမှုတ်လိုက်ပါ 🕯️✨
-            </h3>
-            <p class="font-en text-sm text-pink-600 mb-6">Close your eyes, make a sweet wish, and blow out the candles!</p>
-
-            <!-- Interactive SVG Layered Pastel Pink Cake -->
-            <div class="relative max-w-xs mx-auto my-4 select-none">
-                <svg id="birthdayCakeSvg" viewBox="0 0 300 260" class="w-full h-auto drop-shadow-xl overflow-visible">
-                    <!-- Cake Stand -->
-                    <ellipse cx="150" cy="235" rx="125" ry="16" fill="#fce7f3" stroke="#f472b6" stroke-width="2"/>
-                    <path d="M125 235 L135 215 L165 215 L175 235 Z" fill="#fbcfe8" stroke="#f472b6" stroke-width="2"/>
-                    <ellipse cx="150" cy="215" rx="115" ry="14" fill="#fff1f2" stroke="#f9a8d4" stroke-width="2"/>
-
-                    <!-- Bottom Layer -->
-                    <rect x="55" y="155" width="190" height="58" rx="14" fill="#f9a8d4" stroke="#ec4899" stroke-width="2"/>
-                    <!-- Bottom Layer Cream Drips -->
-                    <path d="M55 168 Q70 185 85 168 Q100 188 115 168 Q130 185 145 168 Q160 190 175 168 Q190 185 205 168 Q220 186 235 168 L245 168 L245 158 Q245 153 235 153 L65 153 Q55 153 55 158 Z" fill="#fff5f7"/>
-                    <!-- Bottom Layer Decorative Dots -->
-                    <circle cx="80" cy="195" r="4" fill="#fff"/>
-                    <circle cx="115" cy="198" r="4" fill="#fde047"/>
-                    <circle cx="150" cy="195" r="4" fill="#fff"/>
-                    <circle cx="185" cy="198" r="4" fill="#fde047"/>
-                    <circle cx="220" cy="195" r="4" fill="#fff"/>
-
-                    <!-- Top Layer -->
-                    <rect x="82" y="102" width="136" height="53" rx="12" fill="#f472b6" stroke="#db2777" stroke-width="2"/>
-                    <!-- Top Layer Frosting -->
-                    <path d="M82 115 Q96 130 110 115 Q124 132 138 115 Q150 128 162 115 Q176 132 190 115 Q204 128 218 115 L218 106 Q218 100 208 100 L92 100 Q82 100 82 106 Z" fill="#ffffff"/>
-                    <!-- Cute Hearts on Top Layer -->
-                    <text x="108" y="143" font-size="14" fill="#fff">♥</text>
-                    <text x="144" y="145" font-size="15" fill="#fef08a">★</text>
-                    <text x="180" y="143" font-size="14" fill="#fff">♥</text>
-
-                    <!-- Candles Group (Clickable individually or via button) -->
-                    <!-- Candle 1 (Left) -->
-                    <g class="candle-item cursor-pointer" onclick="blowSingleCandle(0)">
-                        <rect x="106" y="66" width="10" height="34" rx="3" fill="#fde047" stroke="#eab308" stroke-width="1.5"/>
-                        <line x1="106" y1="75" x2="116" y2="80" stroke="#f472b6" stroke-width="2.5"/>
-                        <line x1="106" y1="86" x2="116" y2="91" stroke="#f472b6" stroke-width="2.5"/>
-                        <line x1="111" y1="60" x2="111" y2="66" stroke="#4b5563" stroke-width="2"/>
-                        <path id="flame-0" class="candle-flame" d="M111 38 C117 47, 118 56, 111 60 C104 56, 105 47, 111 38 Z" fill="#fb923c"/>
-                        <circle id="smoke-0" cx="111" cy="52" r="5" fill="#e5e7eb" opacity="0"/>
-                    </g>
-
-                    <!-- Candle 2 (Center) -->
-                    <g class="candle-item cursor-pointer" onclick="blowSingleCandle(1)">
-                        <rect x="145" y="60" width="10" height="40" rx="3" fill="#ffffff" stroke="#ec4899" stroke-width="1.5"/>
-                        <line x1="145" y1="70" x2="155" y2="75" stroke="#ec4899" stroke-width="2.5"/>
-                        <line x1="145" y1="82" x2="155" y2="87" stroke="#ec4899" stroke-width="2.5"/>
-                        <line x1="150" y1="54" x2="150" y2="60" stroke="#4b5563" stroke-width="2"/>
-                        <path id="flame-1" class="candle-flame" d="M150 30 C157 40, 158 50, 150 54 C142 50, 143 40, 150 30 Z" fill="#f59e0b"/>
-                        <circle id="smoke-1" cx="150" cy="46" r="5" fill="#e5e7eb" opacity="0"/>
-                    </g>
-
-                    <!-- Candle 3 (Right) -->
-                    <g class="candle-item cursor-pointer" onclick="blowSingleCandle(2)">
-                        <rect x="184" y="66" width="10" height="34" rx="3" fill="#bae6fd" stroke="#38bdf8" stroke-width="1.5"/>
-                        <line x1="184" y1="75" x2="194" y2="80" stroke="#f472b6" stroke-width="2.5"/>
-                        <line x1="184" y1="86" x2="194" y2="91" stroke="#f472b6" stroke-width="2.5"/>
-                        <line x1="189" y1="60" x2="189" y2="66" stroke="#4b5563" stroke-width="2"/>
-                        <path id="flame-2" class="candle-flame" d="M189 38 C195 47, 196 56, 189 60 C182 56, 183 47, 189 38 Z" fill="#fb923c"/>
-                        <circle id="smoke-2" cx="189" cy="52" r="5" fill="#e5e7eb" opacity="0"/>
+            <!-- Custom SVG Graduation Cap & Diploma Emblem -->
+            <div class="max-w-[160px] sm:max-w-[190px] mx-auto mb-4 animate-cap-float">
+                <svg viewBox="0 0 240 170" class="w-full h-auto drop-shadow-2xl">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#fcf6ba"/>
+                            <stop offset="50%" stop-color="#d4af37"/>
+                            <stop offset="100%" stop-color="#aa771c"/>
+                        </linearGradient>
+                        <linearGradient id="navyCap" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#1e3a8a"/>
+                            <stop offset="100%" stop-color="#091326"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="120" cy="85" r="70" fill="url(#goldGrad)" opacity="0.14"/>
+                    <polygon points="120,18 220,56 120,94 20,56" fill="url(#navyCap)" stroke="url(#goldGrad)" stroke-width="3"/>
+                    <path d="M64,73 L64,104 C64,118 176,118 176,104 L176,73 L120,94 Z" fill="#0f2347" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                    <circle cx="120" cy="56" r="5" fill="url(#goldGrad)"/>
+                    <path d="M120,56 Q165,68 182,110" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M177,110 L187,110 L190,132 L174,132 Z" fill="url(#goldGrad)"/>
+                    <g transform="translate(55, 126) rotate(-4)">
+                        <rect x="0" y="0" width="130" height="24" rx="12" fill="#fdfbf7" stroke="#d4af37" stroke-width="2"/>
+                        <ellipse cx="122" cy="12" rx="6" ry="11" fill="#e5dec9" stroke="#d4af37" stroke-width="1.5"/>
+                        <rect x="56" y="-2" width="16" height="28" fill="url(#goldGrad)"/>
+                        <polygon points="58,26 50,40 64,34 78,40 70,26" fill="url(#goldGrad)"/>
                     </g>
                 </svg>
             </div>
 
-            <!-- Action Buttons for Cake -->
-            <div class="flex flex-wrap justify-center gap-3 mt-2">
-                <button id="blowCandlesBtn" onclick="blowAllCandles()" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-600 hover:to-rose-500 text-white font-bold shadow-lg shadow-pink-300/60 transform transition hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2">
-                    <span>ဆုတောင်းပြီး မီးမှုတ်မယ်</span>
-                    <span class="text-xl">🌬️🕯️</span>
-                </button>
-                <button id="relightCandlesBtn" onclick="relightCandles()" class="hidden px-5 py-3.5 rounded-2xl bg-white/80 hover:bg-white text-pink-700 border border-pink-300 font-bold shadow transition cursor-pointer flex items-center gap-2">
-                    <span>ဖယောင်းတိုင် ပြန်ထွန်းမယ်</span>
-                    <span>🔥</span>
-                </button>
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/15 border border-amber-300/40 text-amber-200 text-xs sm:text-sm font-semibold mb-3">
+                <span>✨</span>
+                <span>HONORING YOUR HARD WORK & ACHIEVEMENT</span>
+                <span>✨</span>
             </div>
 
-            <!-- Secret Wish Reveal Card (Appears after blowing candles) -->
-            <div id="wishRevealedBox" class="hidden mt-6 p-6 rounded-2xl bg-gradient-to-r from-pink-100/90 via-white/90 to-rose-100/90 border-2 border-pink-300 shadow-inner animate-pop-in">
-                <div class="text-3xl mb-2">🎊💖✨</div>
-                <h4 class="text-lg sm:text-xl font-bold text-pink-800 mb-2">
-                    Yay! မင်းရဲ့ မွေးနေ့ဆုတောင်းလေး ပြည့်ဝပါစေ!
-                </h4>
-                <p class="text-sm sm:text-base text-pink-700 leading-relaxed">
-                    "စိတ်ချမ်းသာ ကိုယ်ကျန်းမာပြီး နေ့ရက်တိုင်းမှာ အပြုံးပန်းလေးတွေ ဝေဆာနေပါစေ သူငယ်ချင်းရေ။ ဘဝခရီးလမ်းတစ်လျှောက် အောင်မြင်မှုတွေ အများကြီး ရရှိပါစေလို့ ဆုတောင်းပေးလိုက်ပါတယ်!" 🌸
-                </p>
+            <h1 class="font-royal text-3xl sm:text-5xl font-extrabold gold-gradient-text tracking-wide leading-tight">
+                Congratulations Graduate! 🎓
+            </h1>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-amber-100 mt-3">
+                ဘွဲ့ရရှိခြင်းအတွက် လှိုက်လှိုက်လှဲလှဲ ဂုဏ်ယူပါတယ်! 🌟
+            </h2>
+
+            <p class="text-sm sm:text-base text-slate-200/90 max-w-xl mx-auto mt-3 leading-relaxed">
+                နှစ်ပေါင်းများစွာ ကြိုးစားအားထုတ်မှုတွေရဲ့ အသီးအပွင့်အဖြစ် ဒီနေ့မှာ ဂုဏ်ယူစရာ ဘွဲ့ဝတ်စုံလေးနဲ့ အောင်ပွဲခံနိုင်ခဲ့ပြီနော်။ အောက်ကခလုတ်လေးကို နှိပ်ပြီး ဂုဏ်ပြုအစီအစဉ်လေးကို တစ်ဆင့်ချင်း ကြည့်ရှုလိုက်ပါ!
+            </p>
+
+            <div class="mt-8">
+                <button onclick="startCelebrationFlow()" class="btn-royal-gold px-8 py-4 rounded-2xl text-base sm:text-lg inline-flex items-center gap-2.5 cursor-pointer">
+                    <span>Start Celebration</span>
+                    <span>🎉✨</span>
+                </button>
             </div>
         </section>
 
-        <!-- SECTION 2: BLESSINGS & WISHES JAR -->
-        <section id="section-blessings" class="tab-section hidden space-y-6 animate-pop-in">
-            <!-- Interactive Wish Jar -->
-            <div class="glass-card rounded-3xl p-6 sm:p-8 text-center">
-                <h3 class="text-xl sm:text-2xl font-bold text-pink-800 mb-1">
-                    မွေးနေ့ ဆုတောင်းလွှာ ဖန်ပုလင်းလေး 🫙💌
+        <!-- =========================================================
+             STEP 2: INTERACTIVE GRADUATION MILESTONE TIMELINE
+             ========================================================= -->
+        <section id="wizard-step-2" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 step-enter">
+            <div class="text-center mb-6">
+                <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 2 of 5 • Milestones</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-1">
+                    အောင်မြင်မှု ခရီးစဉ် မှတ်တိုင်များ 🗓️✨
                 </h3>
-                <p class="text-sm text-pink-700 mb-5">
-                    ခလုတ်လေးကို နှိပ်ပြီး မင်းအတွက် အထူးရေးထားတဲ့ ဆုတောင်းကတ်ပြားလေးတွေ ဖွင့်ဖတ်ကြည့်ပါဦး!
+                <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                    ပထမနှစ်ကနေ ဘွဲ့ယူတဲ့နေ့အထိ မှတ်တိုင်တစ်ခုချင်းစီကို နှိပ်ပြီး အမှတ်တရ စကားလက်ဆောင်လေးတွေ ဖတ်ကြည့်ပါ -
                 </p>
-
-                <button onclick="drawBlessingCard()" class="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-rose-400 via-pink-500 to-fuchsia-500 text-white font-bold shadow-lg shadow-pink-300/70 transform transition hover:scale-105 active:scale-95 cursor-pointer inline-flex items-center gap-2">
-                    <span>ဆုတောင်းကတ်လေး ဖွင့်မယ်</span>
-                    <span class="text-xl">💌✨</span>
-                </button>
-
-                <!-- Highlighted Drawn Blessing Card -->
-                <div id="drawnBlessingDisplay" class="mt-6 max-w-lg mx-auto p-6 rounded-2xl bg-white/85 border-2 border-pink-300 shadow-lg transition-all">
-                    <span id="drawnBlessingEmoji" class="text-4xl block mb-2">🌸</span>
-                    <p id="drawnBlessingBurmese" class="text-base sm:text-lg font-bold text-pink-800 leading-relaxed mb-2">
-                        "မွေးနေ့မှစပြီး စိတ်၏ချမ်းသာခြင်း၊ ကိုယ်၏ကျန်းမာခြင်းတို့နှင့် ပြည့်စုံပြီး လိုအင်ဆန္ဒမှန်သမျှ တစ်လုံးတစ်ဝတည်း ပြည့်ဝပါစေ သူငယ်ချင်း!"
-                    </p>
-                    <p id="drawnBlessingEnglish" class="font-en text-xs sm:text-sm text-pink-600 italic">
-                        "May your birthday be filled with endless joy, good health, and all your sweetest dreams coming true!"
-                    </p>
-                </div>
             </div>
 
-            <!-- Add Custom Blessing Form + Wishes Wall -->
-            <div class="glass-card rounded-3xl p-6 sm:p-8">
-                <h4 class="text-lg sm:text-xl font-bold text-pink-800 mb-3 text-center">
-                    မွေးနေ့ ဆုတောင်းစကားလေးတွေ ထပ်ရေးထည့်မယ် ✍️🌷
-                </h4>
-                <form id="customWishForm" onsubmit="addCustomWish(event)" class="flex flex-col sm:flex-row gap-3 mb-6">
-                    <input type="text" id="wishSenderInput" placeholder="နာမည် (ဥပမာ - မင်းရဲ့ Bestie)" class="sm:w-1/3 px-4 py-3 rounded-xl bg-white/85 border border-pink-300 text-pink-900 placeholder-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-400 text-sm" required>
-                    <input type="text" id="wishMessageInput" placeholder="မွေးနေ့ဆုတောင်းစကား ရေးရန်..." class="flex-1 px-4 py-3 rounded-xl bg-white/85 border border-pink-300 text-pink-900 placeholder-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-400 text-sm" required>
-                    <button type="submit" class="px-5 py-3 rounded-xl bg-pink-500 hover:bg-pink-600 text-white font-bold text-sm shadow cursor-pointer transition">
-                        ပို့မယ် 💖
-                    </button>
-                </form>
+            <!-- Timeline Selector Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                <button onclick="selectMilestone(0)" id="ms-btn-0" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-amber-400 text-slate-950 border-amber-300 flex flex-col items-center gap-1">
+                    <span class="text-2xl">🌱</span>
+                    <span>၁။ ပထမနှစ်</span>
+                </button>
+                <button onclick="selectMilestone(1)" id="ms-btn-1" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1">
+                    <span class="text-2xl">📚</span>
+                    <span>၂။ ကြိုးစားမှုများ</span>
+                </button>
+                <button onclick="selectMilestone(2)" id="ms-btn-2" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1">
+                    <span class="text-2xl">🏆</span>
+                    <span>၃။ နောက်ဆုံးနှစ်</span>
+                </button>
+                <button onclick="selectMilestone(3)" id="ms-btn-3" class="ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1">
+                    <span class="text-2xl">🎓</span>
+                    <span>၄။ ဘွဲ့ယူသည့်နေ့</span>
+                </button>
+            </div>
 
-                <!-- Grid of Blessing Cards -->
-                <div id="blessingsWall" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <!-- Populated via JS -->
+            <!-- Dynamic Milestone Content Display -->
+            <div id="milestoneDisplayBox" class="p-6 sm:p-8 rounded-2xl bg-slate-950/65 border border-amber-400/45 animate-pop">
+                <div class="flex items-center justify-between mb-2">
+                    <span id="msTag" class="text-xs font-royal font-bold text-amber-300 tracking-wider">YEAR 01 • FRESHMAN BEGINNING</span>
+                    <span id="msEmoji" class="text-3xl">🌱</span>
                 </div>
+                <h4 id="msTitle" class="text-lg sm:text-2xl font-bold text-amber-100 mb-2">
+                    အိပ်မက်တွေ စတင်ပျိုးထောင်ခဲ့တဲ့ ပထမနှစ် နေ့ရက်များ
+                </h4>
+                <p id="msDesc" class="text-sm sm:text-base text-slate-200 leading-relaxed mb-4">
+                    တက္ကသိုလ်ကျောင်းတော်ကြီးထဲ စတင်ဝင်ရောက်ခဲ့ချိန်က ရင်ခုန်စိတ်လှုပ်ရှားမှုတွေနဲ့အတူ ကိုယ်ဝါသနာပါရာ ပညာရပ်ကို စတင်လေ့လာသင်ယူခဲ့ပါတယ်။
+                </p>
+                <p id="msQuote" class="font-serif-en italic text-xs sm:text-sm text-amber-300 border-l-2 border-amber-400 pl-3">
+                    "The journey of a thousand miles begins with one brave step."
+                </p>
             </div>
         </section>
 
-        <!-- SECTION 3: BIRTHDAY MINI-GAMES -->
-        <section id="section-games" class="tab-section hidden space-y-6 animate-pop-in">
-            
-            <!-- MINI-GAME 1: Pop the Birthday Balloons & Cupcakes -->
-            <div class="glass-card rounded-3xl p-6 sm:p-8">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+        <!-- =========================================================
+             STEP 3: GRADUATION CAP TOSS MINI-GAME
+             ========================================================= -->
+        <section id="wizard-step-3" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 text-center step-enter">
+            <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 3 of 5 • Celebration Mini-Game</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-1">
+                ဘွဲ့ဦးထုပ် မိုးပေါ်မြှောက်တင် အောင်ပွဲခံမယ်! 🎓🎉
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-md mx-auto">
+                ဘွဲ့ဦးထုပ်လေးကို နှိပ်ပြီး (သို့မဟုတ် အောက်ကခလုတ်ကို နှိပ်ပြီး) မိုးပေါ်မြှောက်တင်လိုက်ပါ!
+            </p>
+
+            <!-- Toss Stage -->
+            <div class="relative w-full h-52 flex items-end justify-center my-4 bg-slate-950/40 rounded-2xl border border-amber-400/25 overflow-hidden">
+                <div id="tossCapIcon" class="text-7xl sm:text-8xl mb-4 select-none cursor-pointer transition-transform hover:scale-110" onclick="tossGraduationCap()">
+                    🎓
+                </div>
+            </div>
+
+            <!-- Celebratory Message Banner -->
+            <div id="tossCelebrationBanner" class="mb-5 p-3.5 rounded-xl bg-amber-400/15 border border-amber-300/40 text-amber-200 text-sm font-bold">
+                Hats Off to the Graduate! ဦးထုပ်လေးကို မြှောက်တင်လိုက်ပါဦး ✨
+            </div>
+
+            <div class="max-w-sm mx-auto space-y-3">
+                <button onclick="tossGraduationCap()" class="btn-royal-gold w-full py-3.5 px-6 rounded-2xl text-base cursor-pointer flex items-center justify-center gap-2">
+                    <span>Toss Graduation Cap!</span>
+                    <span>🎊</span>
+                </button>
+                <p class="text-xs text-amber-200/90 font-semibold">
+                    အောင်ပွဲခံ မြှောက်တင်မှု အကြိမ်ရေ: <span id="capTossCount" class="text-amber-300 text-base font-bold">0</span> ကြိမ် ✨
+                </p>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 4: GRADUATION PHOTO MEMORY FRAME
+             ========================================================= -->
+        <section id="wizard-step-4" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 step-enter">
+            <div class="text-center mb-6">
+                <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 4 of 5 • Memory Frame</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-1">
+                    ဘွဲ့နှင်းသဘင် ရွှေရောင်အမှတ်တရ ဓာတ်ပုံဘောင် 📸👑
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                    ကိုယ်ပိုင်ဘွဲ့ဓာတ်ပုံလေး ရွေးထည့်ပြီး အမှတ်တရ စာတန်းလေးနဲ့ ကြည့်ရှုနိုင်ပါတယ်
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                <!-- Royal Gold Photo Frame Preview (7 cols) -->
+                <div class="md:col-span-7">
+                    <div class="p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-amber-300 via-yellow-500 to-amber-700 shadow-2xl">
+                        <div class="bg-slate-950 rounded-xl overflow-hidden border-2 border-amber-200/80">
+                            <div id="photoFrameContainer" class="h-60 sm:h-72 bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950 flex flex-col items-center justify-center p-6 text-center relative">
+                                <!-- Default Illustrated Graduation Card -->
+                                <svg viewBox="0 0 220 150" class="w-44 h-auto mb-2">
+                                    <polygon points="110,20 185,50 110,80 35,50" fill="#1e3a8a" stroke="#fcf6ba" stroke-width="2.5"/>
+                                    <path d="M68,63 L68,90 C68,102 152,102 152,90 L152,63 L110,80 Z" fill="#091326" stroke="#d4af37" stroke-width="2"/>
+                                    <path d="M110,50 Q145,60 158,96" fill="none" stroke="#fcf6ba" stroke-width="2.5"/>
+                                    <circle cx="158" cy="100" r="4.5" fill="#d4af37"/>
+                                    <rect x="65" y="114" width="90" height="16" rx="8" fill="#fdfbf7" stroke="#d4af37" stroke-width="1.5"/>
+                                    <rect x="104" y="112" width="12" height="20" fill="#d4af37"/>
+                                </svg>
+                                <span class="font-royal text-sm sm:text-base gold-gradient-text font-bold tracking-wider">CLASS OF 2026 GRADUATE</span>
+                                <span class="text-[11px] text-amber-200/75 mt-1">Proud Moment • Forever Cherished</span>
+                            </div>
+                            <div class="p-4 bg-slate-900 text-center border-t border-amber-400/30">
+                                <p id="frameCaptionDisplay" class="text-sm sm:text-base font-bold text-amber-100">
+                                    "ပျော်ရွှင်ဂုဏ်ယူစရာ ဘွဲ့နှင်းသဘင် အမှတ်တရနေ့ရက် 🎓✨"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload & Caption Controls (5 cols) -->
+                <div class="md:col-span-5 space-y-4 bg-slate-950/50 p-5 rounded-2xl border border-amber-400/30">
+                    <h4 class="font-bold text-amber-200 text-sm sm:text-base">ဓာတ်ပုံနှင့် စာတန်း ပြောင်းလဲရန် ✨</h4>
                     <div>
-                        <h3 class="text-xl font-bold text-pink-800">
-                            ဂိမ်း (၁) - မွေးနေ့ ပူဖောင်းလေးတွေ ဖောက်မယ် 🎈🧁
-                        </h3>
-                        <p class="text-xs sm:text-sm text-pink-700">
-                            စက္ကန့် (၂၅) အတွင်း တက်လာတဲ့ ပူဖောင်း၊ ကိတ်မုန့်နဲ့ လက်ဆောင်ဗူးလေးတွေကို နှိပ်ပြီး အမှတ်ယူပါ!
-                        </p>
+                        <label class="flex items-center justify-center gap-2 w-full px-4 py-3.5 rounded-xl bg-amber-400/15 hover:bg-amber-400/25 border border-dashed border-amber-300/70 text-amber-200 text-xs sm:text-sm font-bold cursor-pointer transition">
+                            <span>🖼️</span>
+                            <span id="selectedFileName">ဘွဲ့ဓာတ်ပုံ ရွေးချယ်ရန်</span>
+                            <input type="file" id="photoFileInput" accept="image/*" class="hidden" onchange="previewFramedPhoto(this)">
+                        </label>
                     </div>
-                    <div class="flex items-center gap-3 self-start sm:self-center">
-                        <div class="px-3.5 py-1.5 rounded-xl bg-white/80 border border-pink-300 text-pink-800 font-bold text-sm">
-                            အမှတ်: <span id="balloonScore" class="text-pink-600 text-base">0</span>
-                        </div>
-                        <div class="px-3.5 py-1.5 rounded-xl bg-white/80 border border-pink-300 text-pink-800 font-bold text-sm">
-                            အချိန်: <span id="balloonTimer" class="text-rose-500 text-base">25</span>s
-                        </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-1.5">အမှတ်တရ စာတန်း (Caption):</label>
+                        <input type="text" id="photoCaptionInput" placeholder="ဥပမာ - ဘွဲ့ယူတဲ့နေ့ အမှတ်တရ 🎓" oninput="updateFrameCaption(this.value)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-amber-300/35 text-amber-50 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-amber-300">
                     </div>
-                </div>
-
-                <!-- Interactive Game Area -->
-                <div id="balloonArena" class="relative w-full h-72 sm:h-80 rounded-2xl bg-gradient-to-b from-pink-50/90 to-rose-100/90 border-2 border-pink-300 overflow-hidden select-none shadow-inner">
-                    <!-- Start / Result Overlay inside Arena -->
-                    <div id="balloonOverlay" class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-white/60 backdrop-blur-sm z-10">
-                        <span class="text-5xl mb-2 animate-bounce">🎈</span>
-                        <h4 id="balloonOverlayTitle" class="text-lg sm:text-xl font-bold text-pink-800 mb-1">
-                            အဆင်သင့်ဖြစ်ပြီလား သူငယ်ချင်း?
-                        </h4>
-                        <p id="balloonOverlayDesc" class="text-xs sm:text-sm text-pink-700 mb-4 max-w-sm">
-                            ပူဖောင်း (🎈) = +10 မှတ် | ကိတ်မုန့် (🧁) = +20 မှတ် | လက်ဆောင်ဗူး (🎁) = +30 မှတ်
-                        </p>
-                        <button onclick="startBalloonGame()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold shadow-md hover:scale-105 transition cursor-pointer">
-                            ဂိမ်းစဆော့မယ် 🚀
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MINI-GAME 2: Mystery Birthday Gift Box Picker -->
-            <div class="glass-card rounded-3xl p-6 sm:p-8 text-center">
-                <h3 class="text-xl font-bold text-pink-800 mb-1">
-                    ဂိမ်း (၂) - ကံစမ်းမဲ မွေးနေ့လက်ဆောင်ဗူး ရွေးမယ် 🎁✨
-                </h3>
-                <p class="text-xs sm:text-sm text-pink-700 mb-6">
-                    အောက်က ပန်းရောင် လက်ဆောင်ဗူး (၃) ဗူးထဲက မင်းကြိုက်တဲ့ (၁) ဗူးကို နှိပ်ပြီး မွေးနေ့ဆုလက်ဆောင် ဖွင့်ကြည့်ပါ!
-                </p>
-
-                <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-lg mx-auto mb-6">
-                    <button onclick="pickGiftBox(0)" id="giftBox-0" class="gift-hover p-4 sm:p-6 rounded-2xl bg-white/80 border-2 border-pink-300 shadow-md flex flex-col items-center justify-center gap-2 transition cursor-pointer">
-                        <span class="text-4xl sm:text-5xl">🎁</span>
-                        <span class="text-xs sm:text-sm font-bold text-pink-700">Box #1</span>
-                    </button>
-                    <button onclick="pickGiftBox(1)" id="giftBox-1" class="gift-hover p-4 sm:p-6 rounded-2xl bg-white/80 border-2 border-pink-300 shadow-md flex flex-col items-center justify-center gap-2 transition cursor-pointer">
-                        <span class="text-4xl sm:text-5xl">🎀</span>
-                        <span class="text-xs sm:text-sm font-bold text-pink-700">Box #2</span>
-                    </button>
-                    <button onclick="pickGiftBox(2)" id="giftBox-2" class="gift-hover p-4 sm:p-6 rounded-2xl bg-white/80 border-2 border-pink-300 shadow-md flex flex-col items-center justify-center gap-2 transition cursor-pointer">
-                        <span class="text-4xl sm:text-5xl">💝</span>
-                        <span class="text-xs sm:text-sm font-bold text-pink-700">Box #3</span>
-                    </button>
-                </div>
-
-                <!-- Gift Reveal Result -->
-                <div id="giftResultBox" class="hidden max-w-md mx-auto p-5 rounded-2xl bg-gradient-to-r from-pink-100 to-rose-100 border-2 border-pink-400 shadow-md animate-pop-in">
-                    <span id="giftPrizeIcon" class="text-4xl block mb-1">🧋</span>
-                    <h4 id="giftPrizeTitle" class="text-lg font-bold text-pink-800 mb-1">Free Bubble Tea & Snacks Pass!</h4>
-                    <p id="giftPrizeDesc" class="text-sm text-pink-700 mb-3">
-                        မင်းကြိုက်တဲ့ Bubble Tea နဲ့ မုန့်တွေကို ငါဝယ်ကျွေးမယ့် မွေးနေ့ Voucher လေးပါ!
-                    </p>
-                    <button onclick="resetGiftBoxes()" class="text-xs font-bold text-pink-600 underline hover:text-pink-800 cursor-pointer">
-                        ပြန်ရွေးကြည့်မယ် 🔄
+                    <button type="button" onclick="triggerGoldConfettiBurst()" class="btn-royal-gold w-full py-3 rounded-xl text-xs sm:text-sm cursor-pointer">
+                        ဓာတ်ပုံကို ဂုဏ်ပြုရွှေမှုန်ကြဲမယ် ✨
                     </button>
                 </div>
             </div>
-
         </section>
+
+        <!-- =========================================================
+             STEP 5: SHARED GRADUATION GUESTBOOK & BLESSINGS WALL (FIREBASE SYNC)
+             ========================================================= -->
+        <section id="wizard-step-5" class="wizard-step hidden royal-card rounded-3xl p-6 sm:p-10 space-y-6 step-enter">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-amber-400/25 pb-4">
+                <div>
+                    <span class="text-xs font-royal tracking-widest text-amber-300 uppercase">Step 5 of 5 • Shared Guestbook</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-amber-100 mt-0.5">
+                        အမှတ်တရ ဂုဏ်ပြုဆုတောင်းလွှာများ ✉️💛
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                        ဒီနေရာမှာ ရေးထားခဲ့တဲ့ စာတွေကို လင့်ခ်ဖွင့်ကြည့်သူတိုင်း (ဖုန်း/ကွန်ပျူတာ အားလုံးကနေ) မြင်တွေ့နိုင်ပါတယ်!
+                    </p>
+                </div>
+
+                <!-- Sync Status & Collapsible Firebase Guide Toggle -->
+                <div class="flex flex-col items-start sm:items-end gap-2">
+                    <span id="cloudSyncBadge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/15 border border-amber-300/40 text-amber-200 text-xs font-bold">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        <span id="cloudSyncText">Demo / Local Mode</span>
+                    </span>
+                    <button type="button" onclick="toggleFirebaseGuide()" class="text-xs text-amber-300 underline hover:text-amber-100 cursor-pointer">
+                        ☁️ လူတိုင်းမြင်ရအောင် Firebase ချိတ်ဆက်နည်း
+                    </button>
+                </div>
+            </div>
+
+            <!-- Collapsible Burmese Firebase Setup Guide -->
+            <div id="firebaseGuideBox" class="hidden p-5 rounded-2xl bg-slate-950/85 border border-amber-400/50 text-xs sm:text-sm text-slate-200 space-y-2.5 animate-pop">
+                <div class="flex items-center justify-between">
+                    <h4 class="font-bold text-amber-300 text-sm sm:text-base">☁️ ကိုယ်ရေးလိုက်တဲ့ စာတွေကို တခြားသူတွေပါ အမြဲမြင်ရအောင် Firebase ချိတ်ဆက်နည်း</h4>
+                    <button type="button" onclick="toggleFirebaseGuide()" class="text-slate-400 hover:text-white font-bold px-2 cursor-pointer">✕</button>
+                </div>
+                <p class="leading-relaxed">
+                    လက်ရှိမှာ Firebase Config မထည့်ရသေးရင် စာတွေကို ဒီစက်ထဲမှာပဲ (Local Storage) သိမ်းပေးထားပါမယ်။ တခြားဖုန်း/ကွန်ပျူတာတွေကနေ လင့်ခ်ဖွင့်ကြည့်ရင်ပါ အချင်းချင်း စာတွေမြင်ရဖို့ အောက်ပါအတိုင်း လုပ်ဆောင်ပါ -
+                </p>
+                <ol class="list-decimal list-inside space-y-1.5 text-slate-300">
+                    <li><span class="text-amber-200 font-semibold">console.firebase.google.com</span> မှာ Project အသစ်တစ်ခု ဖန်တီးပါ။</li>
+                    <li>ဘယ်ဘက်မီနူးက <span class="text-amber-200 font-semibold">Build &gt; Firestore Database</span> ကိုနှိပ်ပြီး <span class="text-amber-200 font-semibold">Create database (Test mode)</span> ကို ရွေးပါ။</li>
+                    <li>Project Settings ထဲကနေ Web App (<code class="text-amber-300">&lt;/&gt;</code>) တစ်ခုထည့်ပြီး ရလာတဲ့ <code class="text-amber-300">firebaseConfig</code> ကုဒ်ကို ကူးယူပါ။</li>
+                    <li>ဒီ <code class="text-amber-300">graduation.html</code> ဖိုင်ရဲ့ အောက်ဆုံးနားက <code class="text-amber-300">const firebaseConfig = { ... };</code> နေရာမှာ အစားထိုးထည့်ပြီး GitHub ပေါ် ပြန်တင်လိုက်ရုံပါပဲ!</li>
+                </ol>
+            </div>
+
+            <!-- Post New Congratulatory Message Form -->
+            <form onsubmit="postGradWish(event)" class="p-4 sm:p-5 rounded-2xl bg-slate-950/55 border border-amber-400/35 flex flex-col sm:flex-row gap-3">
+                <input type="text" id="gradSenderInput" placeholder="သင့်နာမည် (ဥပမာ - Bestie / မိသားစု)" class="sm:w-1/3 px-4 py-3 rounded-xl bg-slate-900 border border-amber-300/35 text-amber-50 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-amber-300" required>
+                <input type="text" id="gradWishInput" placeholder="ဘွဲ့ရသူငယ်ချင်းအတွက် အမှတ်တရ ဂုဏ်ပြုစကား ရေးထားခဲ့ပါ..." class="flex-1 px-4 py-3 rounded-xl bg-slate-900 border border-amber-300/35 text-amber-50 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-amber-300" required>
+                <button type="submit" id="postWishBtn" class="btn-royal-gold px-6 py-3 rounded-xl text-xs sm:text-sm cursor-pointer whitespace-nowrap">
+                    စာချန်ထားမယ် ✨
+                </button>
+            </form>
+
+            <!-- Shared Blessings Wall Feed -->
+            <div id="gradWishesList" class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-96 overflow-y-auto pr-1">
+                <!-- Populated via Firebase Real-time Listener or Default + LocalStorage -->
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP NAVIGATION CONTROLS (PREVIOUS / NEXT)
+             ========================================================= -->
+        <div class="mt-6 flex items-center justify-between gap-4">
+            <button id="prevStepBtn" onclick="prevStep()" class="hidden px-5 sm:px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-amber-300/40 text-amber-100 font-bold text-xs sm:text-sm transition cursor-pointer flex items-center gap-2">
+                <span>←</span>
+                <span>ရှေ့တစ်ဆင့်သို့ (Previous)</span>
+            </button>
+            <div class="flex-1"></div>
+            <button id="nextStepBtn" onclick="nextStep()" class="btn-royal-gold px-6 sm:px-7 py-3 rounded-2xl text-xs sm:text-sm cursor-pointer flex items-center gap-2">
+                <span>နောက်တစ်ဆင့်သို့ (Next)</span>
+                <span>→</span>
+            </button>
+        </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="relative z-10 text-center pb-8 px-4 text-xs sm:text-sm text-pink-800/80">
-        <p>Made with 💖 & ✨ for the sweetest Bestie on her Birthday!</p>
+    <footer class="relative z-10 text-center pb-6 px-4 text-xs text-amber-200/70">
+        <p class="font-royal tracking-wider">CONGRATULATIONS • CLASS OF 2026 🎓✨</p>
     </footer>
+
+    <!-- Firebase SDK (Compat for seamless single-file HTML usage) -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
     <script>
         /* =========================================================
-           1. WEB AUDIO API: HAPPY BIRTHDAY MUSIC BOX SYNTHESIZER
+           0. STEP-BY-STEP WIZARD FLOW CONTROLLER
            ========================================================= */
-        let audioCtx = null;
-        let isMusicPlaying = false;
-        let musicTimeout = null;
-        let currentNoteIndex = 0;
+        let currentStep = 1;
+        const totalSteps = 5;
 
-        // Happy Birthday Melody (Notes in Hz & Duration in seconds)
-        const happyBirthdayMelody = [
-            // "Hap-py Birth-day to you"
-            { freq: 261.63, dur: 0.35 }, { freq: 261.63, dur: 0.2 }, { freq: 293.66, dur: 0.55 },
-            { freq: 261.63, dur: 0.55 }, { freq: 349.23, dur: 0.55 }, { freq: 329.63, dur: 1.0 },
-            // "Hap-py Birth-day to you"
-            { freq: 261.63, dur: 0.35 }, { freq: 261.63, dur: 0.2 }, { freq: 293.66, dur: 0.55 },
-            { freq: 261.63, dur: 0.55 }, { freq: 392.00, dur: 0.55 }, { freq: 349.23, dur: 1.0 },
-            // "Hap-py Birth-day dear Bes-tie"
-            { freq: 261.63, dur: 0.35 }, { freq: 261.63, dur: 0.2 }, { freq: 523.25, dur: 0.55 },
-            { freq: 440.00, dur: 0.55 }, { freq: 349.23, dur: 0.55 }, { freq: 329.63, dur: 0.55 }, { freq: 293.66, dur: 1.0 },
-            // "Hap-py Birth-day to you!"
-            { freq: 466.16, dur: 0.35 }, { freq: 466.16, dur: 0.2 }, { freq: 440.00, dur: 0.55 },
-            { freq: 349.23, dur: 0.55 }, { freq: 392.00, dur: 0.55 }, { freq: 349.23, dur: 1.2 },
-            { freq: 0, dur: 0.8 } // Pause before loop
+        function goToStep(stepNumber) {
+            if (stepNumber < 1 || stepNumber > totalSteps) return;
+            currentStep = stepNumber;
+
+            // Hide all steps, show target step
+            document.querySelectorAll('.wizard-step').forEach((el, idx) => {
+                if (idx + 1 === currentStep) {
+                    el.classList.remove('hidden');
+                    el.classList.remove('step-enter');
+                    void el.offsetWidth;
+                    el.classList.add('step-enter');
+                } else {
+                    el.classList.add('hidden');
+                }
+            });
+
+            // Update Top Progress Dots & Badge
+            document.getElementById('stepBadge').textContent = `Step ${currentStep} / ${totalSteps}`;
+            document.querySelectorAll('.step-dot').forEach((dot, idx) => {
+                if (idx + 1 <= currentStep) {
+                    dot.className = 'step-dot flex-1 h-2 rounded-full bg-amber-400 transition-all cursor-pointer shadow-[0_0_8px_rgba(251,191,36,0.6)]';
+                } else {
+                    dot.className = 'step-dot flex-1 h-2 rounded-full bg-white/15 hover:bg-white/30 transition-all cursor-pointer';
+                }
+            });
+
+            // Update Previous / Next Buttons
+            const prevBtn = document.getElementById('prevStepBtn');
+            const nextBtn = document.getElementById('nextStepBtn');
+
+            if (currentStep === 1) {
+                prevBtn.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+            }
+
+            if (currentStep === totalSteps) {
+                nextBtn.classList.add('hidden');
+            } else {
+                nextBtn.classList.remove('hidden');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                goToStep(currentStep + 1);
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                goToStep(currentStep - 1);
+            }
+        }
+
+        function startCelebrationFlow() {
+            triggerGoldConfettiBurst();
+            if (!isMarchPlaying) {
+                document.getElementById('marchMusicBtn').click();
+            }
+            goToStep(2);
+        }
+
+        /* =========================================================
+           1. WEB AUDIO API: "POMP AND CIRCUMSTANCE" GRADUATION MARCH
+           ========================================================= */
+        let gradAudioCtx = null;
+        let isMarchPlaying = false;
+        let marchTimer = null;
+        let noteIdx = 0;
+
+        // Elgar's "Pomp and Circumstance" (Land of Hope and Glory theme)
+        const graduationMarchNotes = [
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 293.66, d: 0.35 }, // D4
+            { f: 261.63, d: 0.40 }, // C4
+            { f: 293.66, d: 0.75 }, // D4
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 220.00, d: 1.30 }, // A3
+            { f: 246.94, d: 0.40 }, // B3
+            { f: 261.63, d: 0.75 }, // C4
+            { f: 246.94, d: 0.35 }, // B3
+            { f: 220.00, d: 0.40 }, // A3
+            { f: 246.94, d: 0.75 }, // B3
+            { f: 261.63, d: 0.75 }, // C4
+            { f: 196.00, d: 1.40 }, // G3
+            { f: 261.63, d: 0.75 }, // C4
+            { f: 293.66, d: 0.40 }, // D4
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 392.00, d: 0.75 }, // G4
+            { f: 349.23, d: 0.75 }, // F4
+            { f: 329.63, d: 0.75 }, // E4
+            { f: 293.66, d: 1.40 }, // D4
+            { f: 0, d: 0.7 }
         ];
 
-        function playMusicBoxNote(freq, duration) {
-            if (!audioCtx || freq === 0) return;
+        function playBrassChime(freq, dur) {
+            if (!gradAudioCtx || freq === 0) return;
             try {
-                const now = audioCtx.currentTime;
-                const osc = audioCtx.createOscillator();
-                const overtone = audioCtx.createOscillator();
-                const gainNode = audioCtx.createGain();
+                const now = gradAudioCtx.currentTime;
+                const osc1 = gradAudioCtx.createOscillator();
+                const osc2 = gradAudioCtx.createOscillator();
+                const gain = gradAudioCtx.createGain();
 
-                // Sweet bell / music-box timbre
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(freq, now);
+                osc1.type = 'triangle';
+                osc1.frequency.setValueAtTime(freq, now);
 
-                overtone.type = 'triangle';
-                overtone.frequency.setValueAtTime(freq * 2, now);
+                osc2.type = 'sine';
+                osc2.frequency.setValueAtTime(freq * 2, now);
 
-                const overtoneGain = audioCtx.createGain();
-                overtoneGain.gain.setValueAtTime(0.04, now);
-                overtoneGain.gain.exponentialRampToValueAtTime(0.0001, now + duration * 0.8);
+                const subGain = gradAudioCtx.createGain();
+                subGain.gain.setValueAtTime(0.05, now);
 
-                gainNode.gain.setValueAtTime(0.001, now);
-                gainNode.gain.linearRampToValueAtTime(0.16, now + 0.03);
-                gainNode.gain.exponentialRampToValueAtTime(0.0008, now + duration + 0.35);
+                gain.gain.setValueAtTime(0.001, now);
+                gain.gain.linearRampToValueAtTime(0.15, now + 0.06);
+                gain.gain.exponentialRampToValueAtTime(0.0008, now + dur + 0.3);
 
-                osc.connect(gainNode);
-                overtone.connect(overtoneGain);
-                overtoneGain.connect(gainNode);
-                gainNode.connect(audioCtx.destination);
+                osc1.connect(gain);
+                osc2.connect(subGain);
+                subGain.connect(gain);
+                gain.connect(gradAudioCtx.destination);
 
-                osc.start(now);
-                overtone.start(now);
-                osc.stop(now + duration + 0.4);
-                overtone.stop(now + duration + 0.4);
-            } catch (e) {
-                console.warn("Audio note error:", e);
+                osc1.start(now);
+                osc2.start(now);
+                osc1.stop(now + dur + 0.35);
+                osc2.stop(now + dur + 0.35);
+            } catch (err) {
+                console.warn(err);
             }
         }
 
-        function scheduleNextNote() {
-            if (!isMusicPlaying) return;
-            const note = happyBirthdayMelody[currentNoteIndex];
-            playMusicBoxNote(note.freq, note.dur);
-            currentNoteIndex = (currentNoteIndex + 1) % happyBirthdayMelody.length;
-            musicTimeout = setTimeout(scheduleNextNote, note.dur * 1000);
+        function stepGraduationMarch() {
+            if (!isMarchPlaying) return;
+            const n = graduationMarchNotes[noteIdx];
+            playBrassChime(n.f, n.d);
+            noteIdx = (noteIdx + 1) % graduationMarchNotes.length;
+            marchTimer = setTimeout(stepGraduationMarch, n.d * 1000);
         }
 
-        function startBirthdayMusic() {
-            if (!audioCtx) {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        document.getElementById('marchMusicBtn').addEventListener('click', () => {
+            if (!gradAudioCtx) {
+                gradAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
             }
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
+            if (gradAudioCtx.state === 'suspended') {
+                gradAudioCtx.resume();
             }
-            if (!isMusicPlaying) {
-                isMusicPlaying = true;
-                updateMusicUI(true);
-                scheduleNextNote();
-            }
-        }
 
-        function stopBirthdayMusic() {
-            isMusicPlaying = false;
-            clearTimeout(musicTimeout);
-            updateMusicUI(false);
-        }
+            const label = document.getElementById('marchBtnLabel');
+            const eq = document.getElementById('musicEq');
 
-        function updateMusicUI(playing) {
-            const btnText = document.getElementById('musicBtnText');
-            const eqBars = document.getElementById('eqBars');
-            if (playing) {
-                btnText.textContent = 'Playing Song 🎶';
-                eqBars.classList.add('eq-playing');
+            if (!isMarchPlaying) {
+                isMarchPlaying = true;
+                label.textContent = 'Playing March 🎺';
+                eq.classList.add('eq-active');
+                stepGraduationMarch();
             } else {
-                btnText.textContent = 'Play Birthday Song 🎵';
-                eqBars.classList.remove('eq-playing');
-            }
-        }
-
-        document.getElementById('musicToggleBtn').addEventListener('click', () => {
-            if (isMusicPlaying) {
-                stopBirthdayMusic();
-            } else {
-                startBirthdayMusic();
+                isMarchPlaying = false;
+                clearTimeout(marchTimer);
+                label.textContent = 'Play March 🎶';
+                eq.classList.remove('eq-active');
             }
         });
 
         /* =========================================================
-           2. SPARKLING GLITTER BACKGROUND & CONFETTI CANVASES
+           2. FLOATING GOLD SPARKLES & CONFETTI CANVASES
            ========================================================= */
-        const glitterCanvas = document.getElementById('glitterCanvas');
-        const gCtx = glitterCanvas.getContext('2d');
-        const confettiCanvas = document.getElementById('confettiCanvas');
+        const sparkleCanvas = document.getElementById('goldSparkleCanvas');
+        const sCtx = sparkleCanvas.getContext('2d');
+        const confettiCanvas = document.getElementById('celebrationConfettiCanvas');
         const cCtx = confettiCanvas.getContext('2d');
 
-        let glitters = [];
+        let sparkles = [];
         let confettis = [];
 
-        function resizeCanvases() {
-            glitterCanvas.width = window.innerWidth;
-            glitterCanvas.height = window.innerHeight;
+        function resizeAllCanvases() {
+            sparkleCanvas.width = window.innerWidth;
+            sparkleCanvas.height = window.innerHeight;
             confettiCanvas.width = window.innerWidth;
             confettiCanvas.height = window.innerHeight;
         }
-        window.addEventListener('resize', resizeCanvases);
-        resizeCanvases();
+        window.addEventListener('resize', resizeAllCanvases);
+        resizeAllCanvases();
 
-        function initGlitters() {
-            glitters = [];
-            const count = Math.min(85, Math.floor((window.innerWidth * window.innerHeight) / 12000));
-            const colors = ['#ffffff', '#fff0f5', '#ffd700', '#ff80ab', '#fce4ec'];
-            for (let i = 0; i < count; i++) {
-                glitters.push({
-                    x: Math.random() * glitterCanvas.width,
-                    y: Math.random() * glitterCanvas.height,
-                    size: Math.random() * 3.2 + 1.2,
-                    speedY: Math.random() * 0.4 + 0.15,
-                    speedX: (Math.random() - 0.5) * 0.3,
+        function initGoldSparkles() {
+            sparkles = [];
+            const total = Math.min(75, Math.floor((window.innerWidth * window.innerHeight) / 14000));
+            const goldTones = ['#fcf6ba', '#d4af37', '#f6d365', '#ffffff', '#fde68a'];
+            for (let i = 0; i < total; i++) {
+                sparkles.push({
+                    x: Math.random() * sparkleCanvas.width,
+                    y: Math.random() * sparkleCanvas.height,
+                    r: Math.random() * 2.6 + 1,
+                    vy: Math.random() * 0.35 + 0.12,
+                    vx: (Math.random() - 0.5) * 0.25,
                     alpha: Math.random(),
-                    alphaSpeed: (Math.random() * 0.03 + 0.01) * (Math.random() < 0.5 ? 1 : -1),
-                    color: colors[Math.floor(Math.random() * colors.length)],
-                    isStar: Math.random() > 0.45
+                    dAlpha: (Math.random() * 0.025 + 0.008) * (Math.random() < 0.5 ? 1 : -1),
+                    color: goldTones[Math.floor(Math.random() * goldTones.length)]
                 });
             }
         }
 
-        function drawStar(ctx, cx, cy, spikes, outerRadius, innerRadius, color, alpha) {
-            let rot = Math.PI / 2 * 3;
-            let x = cx;
-            let y = cy;
-            let step = Math.PI / spikes;
+        function renderSparklesAndConfetti() {
+            sCtx.clearRect(0, 0, sparkleCanvas.width, sparkleCanvas.height);
 
-            ctx.save();
-            ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
-            ctx.beginPath();
-            ctx.moveTo(cx, cy - outerRadius);
-            for (let i = 0; i < spikes; i++) {
-                x = cx + Math.cos(rot) * outerRadius;
-                y = cy + Math.sin(rot) * outerRadius;
-                ctx.lineTo(x, y);
-                rot += step;
-
-                x = cx + Math.cos(rot) * innerRadius;
-                y = cy + Math.sin(rot) * innerRadius;
-                ctx.lineTo(x, y);
-                rot += step;
-            }
-            ctx.lineTo(cx, cy - outerRadius);
-            ctx.closePath();
-            ctx.fillStyle = color;
-            ctx.shadowBlur = 8;
-            ctx.shadowColor = '#ffffff';
-            ctx.fill();
-            ctx.restore();
-        }
-
-        function animateGlitter() {
-            gCtx.clearRect(0, 0, glitterCanvas.width, glitterCanvas.height);
-
-            glitters.forEach(p => {
-                p.y -= p.speedY;
-                p.x += p.speedX;
-                p.alpha += p.alphaSpeed;
-
-                if (p.alpha >= 1 || p.alpha <= 0.1) p.alphaSpeed *= -1;
+            sparkles.forEach(p => {
+                p.y -= p.vy;
+                p.x += p.vx;
+                p.alpha += p.dAlpha;
+                if (p.alpha >= 1 || p.alpha <= 0.12) p.dAlpha *= -1;
                 if (p.y < -10) {
-                    p.y = glitterCanvas.height + 10;
-                    p.x = Math.random() * glitterCanvas.width;
+                    p.y = sparkleCanvas.height + 10;
+                    p.x = Math.random() * sparkleCanvas.width;
                 }
 
-                if (p.isStar) {
-                    drawStar(gCtx, p.x, p.y, 4, p.size * 2.2, p.size * 0.6, p.color, p.alpha);
-                } else {
-                    gCtx.save();
-                    gCtx.globalAlpha = Math.max(0, Math.min(1, p.alpha));
-                    gCtx.beginPath();
-                    gCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                    gCtx.fillStyle = p.color;
-                    gCtx.shadowBlur = 6;
-                    gCtx.shadowColor = '#ffffff';
-                    gCtx.fill();
-                    gCtx.restore();
-                }
+                sCtx.save();
+                sCtx.globalAlpha = Math.max(0, Math.min(1, p.alpha));
+                sCtx.beginPath();
+                sCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                sCtx.fillStyle = p.color;
+                sCtx.shadowBlur = 8;
+                sCtx.shadowColor = '#f6d365';
+                sCtx.fill();
+                sCtx.restore();
             });
 
-            // Also render burst confetti if active
-            if (confettis.length > 0) {
-                cCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
-                for (let i = confettis.length - 1; i >= 0; i--) {
-                    const c = confettis[i];
-                    c.x += c.vx;
-                    c.y += c.vy;
-                    c.vy += 0.18; // gravity
-                    c.rotation += c.rotSpeed;
-                    c.alpha -= 0.008;
+            cCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            for (let i = confettis.length - 1; i >= 0; i--) {
+                const c = confettis[i];
+                c.x += c.vx;
+                c.y += c.vy;
+                c.vy += 0.2;
+                c.rot += c.vRot;
+                c.alpha -= 0.008;
 
-                    if (c.alpha <= 0 || c.y > confettiCanvas.height + 20) {
-                        confettis.splice(i, 1);
-                        continue;
-                    }
-
-                    cCtx.save();
-                    cCtx.translate(c.x, c.y);
-                    cCtx.rotate(c.rotation);
-                    cCtx.globalAlpha = c.alpha;
-                    cCtx.fillStyle = c.color;
-                    cCtx.fillRect(-c.w / 2, -c.h / 2, c.w, c.h);
-                    cCtx.restore();
+                if (c.alpha <= 0 || c.y > confettiCanvas.height + 20) {
+                    confettis.splice(i, 1);
+                    continue;
                 }
-            } else {
-                cCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+
+                cCtx.save();
+                cCtx.translate(c.x, c.y);
+                cCtx.rotate(c.rot);
+                cCtx.globalAlpha = c.alpha;
+                cCtx.fillStyle = c.color;
+                cCtx.fillRect(-c.w / 2, -c.h / 2, c.w, c.h);
+                cCtx.restore();
             }
 
-            requestAnimationFrame(animateGlitter);
+            requestAnimationFrame(renderSparklesAndConfetti);
         }
 
-        function triggerConfettiBurst(originX = window.innerWidth / 2, originY = window.innerHeight / 2) {
-            const palette = ['#ff4081', '#f48fb1', '#ffd700', '#ffffff', '#ff80ab', '#ce93d8', '#ffb74d'];
-            for (let i = 0; i < 90; i++) {
+        function triggerGoldConfettiBurst(x = window.innerWidth / 2, y = window.innerHeight * 0.45) {
+            const colors = ['#fcf6ba', '#d4af37', '#f6d365', '#ffffff', '#3b82f6', '#fde047'];
+            for (let i = 0; i < 95; i++) {
                 const angle = Math.random() * Math.PI * 2;
-                const velocity = Math.random() * 10 + 4;
+                const speed = Math.random() * 11 + 4;
                 confettis.push({
-                    x: originX,
-                    y: originY,
-                    vx: Math.cos(angle) * velocity,
-                    vy: Math.sin(angle) * velocity - 4,
+                    x,
+                    y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 4,
                     w: Math.random() * 9 + 5,
                     h: Math.random() * 5 + 3,
-                    color: palette[Math.floor(Math.random() * palette.length)],
-                    rotation: Math.random() * 360,
-                    rotSpeed: (Math.random() - 0.5) * 0.2,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    rot: Math.random() * 360,
+                    vRot: (Math.random() - 0.5) * 0.22,
                     alpha: 1
                 });
             }
         }
 
         /* =========================================================
-           3. WELCOME OVERLAY & TAB NAVIGATION
+           3. STEP 4: PHOTO MEMORY FRAME PREVIEW
            ========================================================= */
-        document.getElementById('openSurpriseBtn').addEventListener('click', () => {
-            const overlay = document.getElementById('welcomeOverlay');
-            overlay.style.opacity = '0';
-            setTimeout(() => {
-                overlay.style.display = 'none';
-            }, 650);
-            startBirthdayMusic();
-            triggerConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.45);
-        });
+        function previewFramedPhoto(input) {
+            const label = document.getElementById('selectedFileName');
+            const container = document.getElementById('photoFrameContainer');
 
-        function switchTab(tabName) {
-            // Hide all sections
-            document.querySelectorAll('.tab-section').forEach(sec => sec.classList.add('hidden'));
-            // Reset all tab buttons
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.className = 'tab-btn px-4 sm:px-6 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all glass-card text-pink-800 hover:bg-white/80 cursor-pointer flex items-center gap-2';
-            });
+            if (input.files && input.files[0]) {
+                const file = input.files[0];
+                label.textContent = file.name;
+                const imgUrl = URL.createObjectURL(file);
+                container.innerHTML = `<img src="${imgUrl}" alt="Graduation Photo" class="w-full h-full object-cover rounded-lg animate-pop">`;
+                container.className = 'h-64 sm:h-80 bg-slate-950 flex items-center justify-center overflow-hidden';
+                triggerGoldConfettiBurst();
+            }
+        }
 
-            // Activate selected
-            document.getElementById(`section-${tabName}`).classList.remove('hidden');
-            const activeBtn = document.getElementById(`tab-${tabName}`);
-            activeBtn.className = 'tab-btn px-4 sm:px-6 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all shadow-md bg-pink-500 text-white scale-105 cursor-pointer flex items-center gap-2';
+        function updateFrameCaption(val) {
+            const display = document.getElementById('frameCaptionDisplay');
+            display.textContent = val.trim()
+                ? `"${val.trim()}"`
+                : '"ပျော်ရွှင်ဂုဏ်ယူစရာ ဘွဲ့နှင်းသဘင် အမှတ်တရနေ့ရက် 🎓✨"';
         }
 
         /* =========================================================
-           4. INTERACTIVE BIRTHDAY CAKE & CANDLES
+           4. STEP 2: INTERACTIVE GRADUATION JOURNEY TIMELINE
            ========================================================= */
-        let candlesLit = [true, true, true];
-
-        function blowSingleCandle(index) {
-            if (!candlesLit[index]) return;
-            candlesLit[index] = false;
-
-            const flame = document.getElementById(`flame-${index}`);
-            const smoke = document.getElementById(`smoke-${index}`);
-            if (flame) flame.style.display = 'none';
-            if (smoke) {
-                smoke.style.opacity = '0.85';
-                smoke.classList.add('smoke-puff');
+        const journeyMilestones = [
+            {
+                tag: "YEAR 01 • FRESHMAN BEGINNING",
+                emoji: "🌱",
+                title: "အိပ်မက်တွေ စတင်ပျိုးထောင်ခဲ့တဲ့ ပထမနှစ် နေ့ရက်များ",
+                desc: "တက္ကသိုလ်ကျောင်းတော်ကြီးထဲ စတင်ဝင်ရောက်ခဲ့ချိန်က ရင်ခုန်စိတ်လှုပ်ရှားမှုတွေနဲ့အတူ ကိုယ်ဝါသနာပါရာ ပညာရပ်ကို စတင်လေ့လာသင်ယူခဲ့ပါတယ်။",
+                quote: '"The journey of a thousand miles begins with one brave step."'
+            },
+            {
+                tag: "YEAR 02 - 03 • DEDICATION & GROWTH",
+                emoji: "📚",
+                title: "မဆုတ်မနစ် ကြိုးစားအားထုတ်ခဲ့မှုများ",
+                desc: "စာမေးပွဲတွေ၊ Presentation တွေနဲ့ ခက်ခဲတဲ့ သင်ခန်းစာတွေကို ဇွဲမလျှော့ဘဲ သူငယ်ချင်းတွေနဲ့အတူ ကြိုးစားကျော်ဖြတ်နိုင်ခဲ့ပါတယ်။",
+                quote: '"Success is the sum of small efforts, repeated day in and day out."'
+            },
+            {
+                tag: "FINAL YEAR • THESIS & ACHIEVEMENT",
+                emoji: "🏆",
+                title: "နောက်ဆုံးနှစ် စာမေးပွဲနှင့် အောင်မြင်မှု မှတ်တိုင်",
+                desc: "Thesis နဲ့ နောက်ဆုံးစာမေးပွဲကြီးကို အောင်မြင်စွာ ပြီးမြောက်နိုင်ခဲ့ပြီး ဘွဲ့ယူဖို့ အဆင်သင့်ဖြစ်ခဲ့တဲ့ ဂုဏ်ယူစရာ အချိန်ကာလပါ။",
+                quote: '"You believed you could, so you did."'
+            },
+            {
+                tag: "GRADUATION DAY • BRIGHT HORIZONS",
+                emoji: "🎓",
+                title: "ဂုဏ်ယူဖွယ်ရာ ဘွဲ့နှင်းသဘင် အောင်ပွဲနေ့",
+                desc: "မိဘဆရာသမားများရဲ့ ဂုဏ်ယူဝမ်းမြောက်မှုတွေနဲ့အတူ ဘွဲ့ဝတ်စုံလေးဝတ်ဆင်ပြီး ဘွဲ့လက်မှတ်ကို ဂုဏ်ယူစွာ လက်ခံရယူနိုင်ခဲ့ပါပြီ!",
+                quote: '"Caps off to the past, glasses up to the future!"'
             }
+        ];
 
-            if (candlesLit.every(lit => !lit)) {
-                onAllCandlesBlown();
-            }
-        }
-
-        function blowAllCandles() {
-            [0, 1, 2].forEach(idx => blowSingleCandle(idx));
-        }
-
-        function onAllCandlesBlown() {
-            document.getElementById('blowCandlesBtn').classList.add('hidden');
-            document.getElementById('relightCandlesBtn').classList.remove('hidden');
-            document.getElementById('wishRevealedBox').classList.remove('hidden');
-            triggerConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.45);
-        }
-
-        function relightCandles() {
-            candlesLit = [true, true, true];
-            [0, 1, 2].forEach(idx => {
-                const flame = document.getElementById(`flame-${idx}`);
-                const smoke = document.getElementById(`smoke-${idx}`);
-                if (flame) flame.style.display = 'block';
-                if (smoke) {
-                    smoke.style.opacity = '0';
-                    smoke.classList.remove('smoke-puff');
+        function selectMilestone(idx) {
+            document.querySelectorAll('.ms-btn').forEach((btn, i) => {
+                if (i === idx) {
+                    btn.className = 'ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-amber-400 text-slate-950 border-amber-300 flex flex-col items-center gap-1';
+                } else {
+                    btn.className = 'ms-btn p-3.5 rounded-2xl text-xs sm:text-sm font-bold border transition cursor-pointer bg-white/5 text-amber-200 border-amber-400/30 hover:bg-white/15 flex flex-col items-center gap-1';
                 }
             });
-            document.getElementById('blowCandlesBtn').classList.remove('hidden');
-            document.getElementById('relightCandlesBtn').classList.add('hidden');
-            document.getElementById('wishRevealedBox').classList.add('hidden');
+
+            const m = journeyMilestones[idx];
+            const box = document.getElementById('milestoneDisplayBox');
+            box.classList.remove('animate-pop');
+            void box.offsetWidth;
+            box.classList.add('animate-pop');
+
+            document.getElementById('msTag').textContent = m.tag;
+            document.getElementById('msEmoji').textContent = m.emoji;
+            document.getElementById('msTitle').textContent = m.title;
+            document.getElementById('msDesc').textContent = m.desc;
+            document.getElementById('msQuote').textContent = m.quote;
         }
 
         /* =========================================================
-           5. BLESSINGS & WISHES JAR + WALL
+           5. STEP 3: GRADUATION CAP TOSS MINI-GAME
            ========================================================= */
-        const birthdayBlessings = [
-            {
-                emoji: "🌸",
-                my: "မွေးနေ့မှစပြီး စိတ်၏ချမ်းသာခြင်း၊ ကိုယ်၏ကျန်းမာခြင်းတို့နှင့် ပြည့်စုံပြီး လိုအင်ဆန္ဒမှန်သမျှ တစ်လုံးတစ်ဝတည်း ပြည့်ဝပါစေ သူငယ်ချင်း!",
-                en: "May your birthday be filled with endless joy, good health, and all your sweetest dreams coming true!"
-            },
-            {
-                emoji: "👑",
-                my: "ဒီနှစ်မှာ အရင်နှစ်တွေထက် ပိုလှပ၊ ပိုတောက်ပပြီး ကိုယ်လုပ်ချင်တဲ့ အလုပ်တိုင်းမှာ အောင်မြင်မှု သရဖူဆောင်းနိုင်ပါစေနော်!",
-                en: "Shine brighter than ever this year and conquer every goal you set your heart on, Queen!"
-            },
-            {
-                emoji: "💖",
-                my: "တို့နှစ်ယောက်ရဲ့ သူငယ်ချင်းသံယောဇဉ်လေးလည်း အမြဲတမ်း ခိုင်မြဲပြီး အသက်ကြီးတဲ့အထိ အတူတူ ပျော်ရွှင်ရယ်မောနိုင်ပါစေ!",
-                en: "Here's to a lifetime of friendship, laughter, late-night talks, and unforgettable memories together!"
-            },
-            {
-                emoji: "✨",
-                my: "စိတ်ညစ်စရာတွေ အားလုံး ဝေးကွာပြီး မင်းရဲ့ မျက်နှာလေးပေါ်မှာ အမြဲတမ်း အပြုံးပန်းလေးတွေပဲ ဝေဆာနေပါစေ သူငယ်ချင်းရေ!",
-                en: "May worries stay far away and may your pretty smile brighten every single day of your life!"
-            },
-            {
-                emoji: "🍀",
-                my: "ကံကောင်းခြင်း လက်ဆောင်တွေ အများကြီး ရရှိပြီး ချစ်ရတဲ့ မိသားစု၊ သူငယ်ချင်းတွေနဲ့ အမြဲ ပျော်ပျော်ရွှင်ရွှင် ဖြတ်သန်းနိုင်ပါစေ!",
-                en: "Wishing you overflowing luck, prosperity, and warm love surrounded by everyone who adores you!"
-            }
+        let tossCounter = 0;
+        let isTossing = false;
+
+        const tossCheers = [
+            "Hats Off to the Graduate! အောင်ပွဲခံလိုက်ပါပြီ! 🎓✨",
+            "You Did It! ကြိုးစားမှုတွေ အရာထင်ပြီနော်! 🌟🥂",
+            "Sky is the Limit! အနာဂတ်မှာ အမြင့်ဆုံး ပျံသန်းနိုင်ပါစေ! 🚀💛",
+            "So Proud of You! တကယ့်ကို ဂုဏ်ယူရပါတယ် သူငယ်ချင်း! 🏆🎉"
         ];
 
-        let lastBlessingIdx = 0;
+        function tossGraduationCap() {
+            if (isTossing) return;
+            isTossing = true;
 
-        function drawBlessingCard() {
-            let nextIdx;
-            do {
-                nextIdx = Math.floor(Math.random() * birthdayBlessings.length);
-            } while (nextIdx === lastBlessingIdx && birthdayBlessings.length > 1);
-            lastBlessingIdx = nextIdx;
+            const cap = document.getElementById('tossCapIcon');
+            cap.classList.remove('animate-toss');
+            void cap.offsetWidth;
+            cap.classList.add('animate-toss');
 
-            const item = birthdayBlessings[nextIdx];
-            const box = document.getElementById('drawnBlessingDisplay');
-            box.classList.remove('animate-pop-in');
-            void box.offsetWidth; // trigger reflow
-            box.classList.add('animate-pop-in');
+            tossCounter++;
+            document.getElementById('capTossCount').textContent = tossCounter;
+            document.getElementById('tossCelebrationBanner').textContent = tossCheers[tossCounter % tossCheers.length];
+            triggerGoldConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.45);
 
-            document.getElementById('drawnBlessingEmoji').textContent = item.emoji;
-            document.getElementById('drawnBlessingBurmese').textContent = `"${item.my}"`;
-            document.getElementById('drawnBlessingEnglish').textContent = `"${item.en}"`;
-            triggerConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.5);
+            setTimeout(() => {
+                cap.classList.remove('animate-toss');
+                isTossing = false;
+            }, 1150);
         }
 
-        const initialWallWishes = [
-            { sender: "မင်းရဲ့ Bestie 💕", message: "Happy Birthday ပါ သူငယ်ချင်းရေ! အမြဲတမ်း ချစ်ခင်နေမယ်နော် 🎂✨" },
-            { sender: "Secret Admirer 🌸", message: "ပျော်ရွှင်စရာ မွေးနေ့လေး ဖြစ်ပါစေ! ဒီနှစ်ထဲမှာ အောင်မြင်မှုတွေ အများကြီး ရပါစေ 🎉" },
-            { sender: "Coffee Buddy 🧋", message: "မွေးနေ့မှာ မုန့်အများကြီး ဝယ်ကျွေးရမယ်နော်! ကျန်းမာပျော်ရွှင်ပါစေ 🥳" },
-            { sender: "Forever Friend 🌷", message: "အခက်အခဲတွေ ကြုံလာတိုင်း အမြဲတမ်း မင်းဘေးမှာ ရှိနေပေးမယ်နော် 💖" }
+        /* =========================================================
+           6. STEP 5: SHARED GUESTBOOK (FIREBASE FIRESTORE + FALLBACK)
+           ========================================================= */
+        // 🔧 လူတိုင်းမြင်ရအောင် Cloud Sync လုပ်လိုပါက အောက်ပါ firebaseConfig တွင် သင့် Firebase Project အချက်အလက်များ အစားထိုးထည့်ပါ
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        const defaultGradWishes = [
+            { sender: "Your Proud Bestie 🎓", text: "Congratulations ပါ သူငယ်ချင်းရေ! မင်းကြိုးစားခဲ့သမျှ အရာထင်ပြီမို့ အရမ်းဂုဏ်ယူတယ်နော် ✨" },
+            { sender: "Family & Loved Ones 💛", text: "ဘွဲ့ရပြီးနောက်ပိုင်း ခြေလှမ်းတိုင်းမှာ ကံကောင်းခြင်းနဲ့ အောင်မြင်မှုတွေ အမြဲရှိနေပါစေ!" },
+            { sender: "Campus Squad 🥂", text: "ဘွဲ့ယူပြီးရင် မုန့်ဝယ်ကျွေးဖို့ မမေ့နဲ့နော်! ပျော်ရွှင်စရာ ဘွဲ့နှင်းသဘင်နေ့လေး ဖြစ်ပါစေ 🎉" },
+            { sender: "Senior Mentor 🌟", text: "ကြိုးစားအားထုတ်မှုရဲ့ ရလဒ်ကောင်းကို ပိုင်ဆိုင်နိုင်ခဲ့ပြီ။ ဆက်လက်ပြီး ထွန်းတောက်ပါစေ!" }
         ];
 
-        function renderBlessingsWall() {
-            const wall = document.getElementById('blessingsWall');
-            wall.innerHTML = initialWallWishes.map(w => `
-                <div class="p-4 rounded-2xl bg-white/75 border border-pink-200 shadow-sm hover:shadow-md transition">
+        let firestoreDb = null;
+        let isFirebaseConnected = false;
+
+        function toggleFirebaseGuide() {
+            document.getElementById('firebaseGuideBox').classList.toggle('hidden');
+        }
+
+        function initGuestbookStorage() {
+            const isConfigured = firebaseConfig.apiKey && firebaseConfig.apiKey !== "YOUR_API_KEY" && firebaseConfig.projectId !== "YOUR_PROJECT_ID";
+
+            if (isConfigured && typeof firebase !== 'undefined') {
+                try {
+                    if (!firebase.apps.length) {
+                        firebase.initializeApp(firebaseConfig);
+                    }
+                    firestoreDb = firebase.firestore();
+                    isFirebaseConnected = true;
+
+                    // Update Status Badge to Live Cloud Sync
+                    const badge = document.getElementById('cloudSyncBadge');
+                    badge.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/50 text-emerald-300 text-xs font-bold';
+                    badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span><span>Cloud Sync Active (လူတိုင်းမြင်နိုင်သည်)</span>';
+
+                    // Real-time listener for all visitors
+                    firestoreDb.collection('graduation_blessings')
+                        .orderBy('createdAt', 'desc')
+                        .onSnapshot((snapshot) => {
+                            const cloudWishes = [];
+                            snapshot.forEach(doc => {
+                                cloudWishes.push(doc.data());
+                            });
+                            renderGradWishes([...cloudWishes, ...defaultGradWishes]);
+                        }, (error) => {
+                            console.warn("Firestore read error, falling back to local:", error);
+                            loadLocalWishes();
+                        });
+                    return;
+                } catch (e) {
+                    console.warn("Firebase init failed, using local fallback:", e);
+                }
+            }
+
+            // Fallback mode (Local Storage + Preloaded Burmese Wishes)
+            loadLocalWishes();
+        }
+
+        function loadLocalWishes() {
+            let saved = [];
+            try {
+                saved = JSON.parse(localStorage.getItem('grad_guestbook_wishes_v1') || '[]');
+            } catch (e) {
+                saved = [];
+            }
+            renderGradWishes([...saved, ...defaultGradWishes]);
+        }
+
+        function renderGradWishes(wishesArray) {
+            const container = document.getElementById('gradWishesList');
+            container.innerHTML = wishesArray.map(item => `
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-amber-400/35 hover:border-amber-300/60 transition animate-pop">
                     <div class="flex items-center justify-between mb-1.5">
-                        <span class="font-bold text-xs sm:text-sm text-pink-700">${escapeHtml(w.sender)}</span>
-                        <span class="text-sm">💌</span>
+                        <span class="font-bold text-xs sm:text-sm text-amber-300">${escapeSafe(item.sender)}</span>
+                        <span class="text-sm">🎓</span>
                     </div>
-                    <p class="text-sm text-pink-900 leading-relaxed">${escapeHtml(w.message)}</p>
+                    <p class="text-xs sm:text-sm text-slate-100 leading-relaxed">${escapeSafe(item.text)}</p>
                 </div>
             `).join('');
         }
 
-        function addCustomWish(e) {
+        async function postGradWish(e) {
             e.preventDefault();
-            const sender = document.getElementById('wishSenderInput').value.trim();
-            const message = document.getElementById('wishMessageInput').value.trim();
-            if (!sender || !message) return;
+            const senderInput = document.getElementById('gradSenderInput');
+            const textInput = document.getElementById('gradWishInput');
+            const btn = document.getElementById('postWishBtn');
 
-            initialWallWishes.unshift({ sender, message });
-            renderBlessingsWall();
-            document.getElementById('wishSenderInput').value = '';
-            document.getElementById('wishMessageInput').value = '';
-            triggerConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.6);
-        }
+            const sender = senderInput.value.trim();
+            const text = textInput.value.trim();
+            if (!sender || !text) return;
 
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
+            btn.disabled = true;
+            btn.textContent = 'သိမ်းဆည်းနေသည်...';
 
-        /* =========================================================
-           6. MINI-GAME 1: POP THE BIRTHDAY BALLOONS
-           ========================================================= */
-        let balloonGameActive = false;
-        let balloonScore = 0;
-        let balloonTimeLeft = 25;
-        let balloonSpawnTimer = null;
-        let balloonCountdownTimer = null;
-
-        function startBalloonGame() {
-            const arena = document.getElementById('balloonArena');
-            const overlay = document.getElementById('balloonOverlay');
-
-            // Clear old items
-            arena.querySelectorAll('.floating-target').forEach(el => el.remove());
-
-            balloonScore = 0;
-            balloonTimeLeft = 25;
-            balloonGameActive = true;
-
-            document.getElementById('balloonScore').textContent = balloonScore;
-            document.getElementById('balloonTimer').textContent = balloonTimeLeft;
-            overlay.classList.add('hidden');
-
-            spawnBalloonItem();
-            balloonSpawnTimer = setInterval(spawnBalloonItem, 650);
-
-            balloonCountdownTimer = setInterval(() => {
-                balloonTimeLeft--;
-                document.getElementById('balloonTimer').textContent = balloonTimeLeft;
-                if (balloonTimeLeft <= 0) {
-                    endBalloonGame();
+            if (isFirebaseConnected && firestoreDb) {
+                try {
+                    await firestoreDb.collection('graduation_blessings').add({
+                        sender,
+                        text,
+                        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                    });
+                } catch (err) {
+                    console.error("Error saving to Firestore:", err);
+                    saveToLocalFallback(sender, text);
                 }
-            }, 1000);
+            } else {
+                saveToLocalFallback(sender, text);
+            }
+
+            senderInput.value = '';
+            textInput.value = '';
+            btn.disabled = false;
+            btn.textContent = 'စာချန်ထားမယ် ✨';
+            triggerGoldConfettiBurst();
         }
 
-        function spawnBalloonItem() {
-            if (!balloonGameActive) return;
-            const arena = document.getElementById('balloonArena');
-            const items = [
-                { emoji: '🎈', points: 10 },
-                { emoji: '🩷', points: 10 },
-                { emoji: '🧁', points: 20 },
-                { emoji: '🎁', points: 30 }
-            ];
-            const chosen = items[Math.floor(Math.random() * items.length)];
-
-            const el = document.createElement('button');
-            el.type = 'button';
-            el.className = 'floating-target absolute text-4xl sm:text-5xl cursor-pointer transform transition-transform active:scale-125 focus:outline-none';
-            el.textContent = chosen.emoji;
-
-            const maxLeft = Math.max(20, arena.clientWidth - 65);
-            el.style.left = `${Math.floor(Math.random() * maxLeft) + 10}px`;
-            el.style.bottom = '-55px';
-
-            const duration = Math.random() * 1.6 + 2.2; // 2.2s to 3.8s float up
-            el.style.transition = `bottom ${duration}s linear, transform 0.2s ease`;
-
-            const popHandler = (e) => {
-                e.stopPropagation();
-                if (!balloonGameActive || el.dataset.popped) return;
-                el.dataset.popped = 'true';
-
-                balloonScore += chosen.points;
-                document.getElementById('balloonScore').textContent = balloonScore;
-
-                // Show floating +points badge
-                const badge = document.createElement('span');
-                badge.className = 'absolute font-en font-bold text-pink-600 text-sm pointer-events-none animate-bounce';
-                badge.style.left = el.style.left;
-                badge.style.top = `${el.offsetTop}px`;
-                badge.textContent = `+${chosen.points}✨`;
-                arena.appendChild(badge);
-                setTimeout(() => badge.remove(), 600);
-
-                el.textContent = '💥';
-                el.style.transform = 'scale(1.4)';
-                setTimeout(() => el.remove(), 180);
-            };
-
-            el.addEventListener('pointerdown', popHandler);
-            arena.appendChild(el);
-
-            // Trigger upward movement
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    el.style.bottom = `${arena.clientHeight + 60}px`;
-                });
-            });
-
-            setTimeout(() => {
-                if (el.parentNode) el.remove();
-            }, duration * 1000 + 100);
+        function saveToLocalFallback(sender, text) {
+            let saved = [];
+            try {
+                saved = JSON.parse(localStorage.getItem('grad_guestbook_wishes_v1') || '[]');
+            } catch (e) {
+                saved = [];
+            }
+            saved.unshift({ sender, text });
+            try {
+                localStorage.setItem('grad_guestbook_wishes_v1', JSON.stringify(saved));
+            } catch (e) {}
+            renderGradWishes([...saved, ...defaultGradWishes]);
         }
 
-        function endBalloonGame() {
-            balloonGameActive = false;
-            clearInterval(balloonSpawnTimer);
-            clearInterval(balloonCountdownTimer);
-
-            const arena = document.getElementById('balloonArena');
-            arena.querySelectorAll('.floating-target').forEach(el => el.remove());
-
-            const overlay = document.getElementById('balloonOverlay');
-            document.getElementById('balloonOverlayTitle').textContent = `ဂိမ်းပြီးပါပြီ! စုစုပေါင်း ရမှတ်: ${balloonScore} မှတ် 🎉`;
-            document.getElementById('balloonOverlayDesc').textContent =
-                balloonScore >= 200
-                    ? "Wow! မင်းက တကယ့် Birthday Queen ပါပဲ! အရမ်းတော်တယ် 👑💖"
-                    : "အရမ်းပျော်စရာကောင်းတယ်နော်! နောက်တစ်ခေါက် ထပ်ဆော့ကြည့်ဦးမလား? 🌸";
-
-            overlay.querySelector('button').textContent = "ထပ်ဆော့မယ် 🔄";
-            overlay.classList.remove('hidden');
-            triggerConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.5);
+        function escapeSafe(str) {
+            const d = document.createElement('div');
+            d.textContent = str;
+            return d.innerHTML;
         }
 
         /* =========================================================
-           7. MINI-GAME 2: MYSTERY GIFT BOX PICKER
-           ========================================================= */
-        const mysteryGifts = [
-            {
-                icon: "🧋",
-                title: "Free Bubble Tea & Dessert Treat!",
-                desc: "မင်းကြိုက်တဲ့ Bubble Tea နဲ့ အချိုပွဲတွေကို ငါဝယ်ကျွေးမယ့် မွေးနေ့ Voucher လေးပါ! Screenshot ရိုက်ထားနော် 📸💖"
-            },
-            {
-                icon: "🛍️",
-                title: "Unlimited Shopping & Photo Buddy Pass!",
-                desc: "မင်းစိတ်ကြိုက် Shopping ထွက်ပြီး ဓာတ်ပုံလှလှလေးတွေ အမုန်းရိုက်ပေးမယ့် Bestie VIP Pass လေးပါ! ✨📷"
-            },
-            {
-                icon: "🎬",
-                title: "Cozy Movie & Snacks Date On Me!",
-                desc: "မင်းကြိုက်တဲ့ ရုပ်ရှင်ကြည့်ရင်း မုန့်တွေ အဝစားကြမယ့် မွေးနေ့အထူးလက်ဆောင်လေးပါ! 🍿🎀"
-            }
-        ];
-
-        let giftPicked = false;
-
-        function pickGiftBox(boxIndex) {
-            if (giftPicked) return;
-            giftPicked = true;
-
-            // Shuffle gift so any box feels exciting
-            const prize = mysteryGifts[Math.floor(Math.random() * mysteryGifts.length)];
-
-            for (let i = 0; i < 3; i++) {
-                const btn = document.getElementById(`giftBox-${i}`);
-                if (i === boxIndex) {
-                    btn.classList.add('bg-pink-200', 'border-pink-500', 'scale-105');
-                    btn.querySelector('span:first-child').textContent = prize.icon;
-                } else {
-                    btn.classList.add('opacity-50');
-                }
-            }
-
-            document.getElementById('giftPrizeIcon').textContent = prize.icon;
-            document.getElementById('giftPrizeTitle').textContent = prize.title;
-            document.getElementById('giftPrizeDesc').textContent = prize.desc;
-            document.getElementById('giftResultBox').classList.remove('hidden');
-
-            triggerConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.65);
-        }
-
-        function resetGiftBoxes() {
-            giftPicked = false;
-            const defaultIcons = ['🎁', '🎀', '💝'];
-            for (let i = 0; i < 3; i++) {
-                const btn = document.getElementById(`giftBox-${i}`);
-                btn.classList.remove('bg-pink-200', 'border-pink-500', 'scale-105', 'opacity-50');
-                btn.querySelector('span:first-child').textContent = defaultIcons[i];
-            }
-            document.getElementById('giftResultBox').classList.add('hidden');
-        }
-
-        /* =========================================================
-           8. INITIALIZE ON WINDOW LOAD
+           7. WINDOW ONLOAD INITIALIZATION
            ========================================================= */
         window.onload = function () {
-            initGlitters();
-            animateGlitter();
-            renderBlessingsWall();
+            initGoldSparkles();
+            renderSparklesAndConfetti();
+            initGuestbookStorage();
+            goToStep(1);
+            setTimeout(() => triggerGoldConfettiBurst(), 500);
         };
     </script>
 </body>
